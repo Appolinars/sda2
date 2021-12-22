@@ -77,7 +77,7 @@ const Intro = () => {
             transform="rotate(45 601.071 0)"
             fill="#899198"
           />
-          <path d="M601 7H123C55.6213 7 1 61.6213 1 129V129" stroke="#899198" stroke-width="2" />
+          <path d="M601 7H123C55.6213 7 1 61.6213 1 129V129" stroke="#899198" strokeWidth="2" />
         </svg>
       </div>
     </section>

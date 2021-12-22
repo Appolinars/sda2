@@ -11,7 +11,7 @@ const Download = () => {
           </h2>
           <p className="heading__subtitle">Take a whitepaper with you.</p>
         </div>
-        <a href="/" className={`${styles.download__btn} btn btn--white`}>
+        <a href="&/" className={`${styles.download__btn} btn btn--white`}>
           Free download <DownloadIcon />
         </a>
       </div>

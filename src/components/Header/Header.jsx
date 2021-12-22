@@ -55,17 +55,17 @@ const Header = ({ openModal }) => {
         >
           <ul className={styles.nav__list}>
             <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
+              <a href="&/" className={styles.nav__link}>
                 Cases
               </a>
             </li>
             <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
+              <a href="&/" className={styles.nav__link}>
                 Blog
               </a>
             </li>
             <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
+              <a href="&/" className={styles.nav__link}>
                 About us
               </a>
             </li>

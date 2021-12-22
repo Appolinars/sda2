@@ -1,0 +1,143 @@
+@import '@styles/variables';
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 300px 0 100px;
+    position: relative;
+
+    &__video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        position: relative;
+    }
+
+    &__title {
+        max-width: 780px;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 70px;
+    }
+
+    &__text {
+        margin-bottom: 100px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__scroll {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__scroll_arrow {
+        display: inline-block;
+        margin-top: 12px;
+        animation: animateArrow 2s ease-in-out infinite;
+    }
+
+    @keyframes animateArrow {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(20px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+.line_1 {
+    position: absolute;
+    right: -30px;
+    bottom: 12px;
+    stroke-dasharray: 1600px;
+    stroke-dashoffset: 1600px;
+    transition: stroke-dashoffset 4s;
+
+    rect {
+        opacity: 0;
+        transition: opacity .4s 4s;
+    }
+
+    &.active {
+        stroke-dashoffset: 0;
+
+        rect {
+            opacity: 1;
+        }
+    }
+}
+
+.line_2 {
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    stroke-dasharray: 800px;
+    stroke-dashoffset: 800px;
+    transition: stroke-dashoffset 3s 4s;
+
+    rect {
+        opacity: 0;
+        transition: opacity .4s 4s;
+    }
+
+    &.active {
+        stroke-dashoffset: 0;
+
+        rect {
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .intro {
+        padding: 200px 0 100px;
+    }
+
+    .intro__title {
+        font-size: 60px;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__title {
+        font-size: 36px;
+        line-height: 34px;
+    }
+
+    .intro__text {
+        margin-bottom: 50px;
+    }
+
+    .intro__scroll_icon {
+        display: none;
+    }
+
+    .intro__scroll_arrow {
+        margin-top: 0;
+    }
+}

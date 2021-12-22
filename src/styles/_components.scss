@@ -1,0 +1,93 @@
+@import './variables';
+
+.btn {
+    display: inline-block;
+    padding: 17px 20px;
+    border: 1px solid $color-dark;
+    border-radius: 10px;
+    background-color: $color-dark;
+    color: $color-white;
+    cursor: pointer;
+    transition: .4s;
+
+    svg {
+        margin-left: 10px;
+
+        path {
+            transition: fill .4s;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+
+        &:not(.btn--white) {
+            background-color: $color-white;
+            color: $color-dark;
+
+            path {
+                fill: $color-dark;
+            }
+        }
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-dark;
+
+        &:hover {
+            background-color: $color-dark;
+            color: $color-white;
+            box-shadow: 0 0 3px 1px $color-white;
+
+            path {
+                fill: $color-white;
+            }
+        }
+    }
+}
+
+.section-padding {
+    padding: 130px 0 100px;
+}
+
+.heading {
+    &__title {
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 1;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .heading__title {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading__title {
+        font-size: 36px;
+        line-height: 35px;
+    }
+    .heading__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 15px;
+    }
+}

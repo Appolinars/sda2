@@ -1,0 +1,99 @@
+@import '@styles/variables';
+
+.accordion {
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 25px;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: $color-grey;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: background-color .5s;
+        }
+
+        &.accordion__head_active {
+
+            .accordion__arrow {
+                transform: rotate(180deg);
+            }
+
+            &::after {
+                background-color: #FFBF60;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+
+    &__arrow {
+        margin-left: 15px;
+        transition: transform .4s;
+
+        path {
+            fill: $color-dark;
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    &__content_inner {
+        padding: 50px 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #FFBF60;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+        }
+    }
+
+    &__content_title {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .accordion__title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .accrodion__toggle_text {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .accordion__title {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .accordion__content_inner {
+        padding: 25px 0;
+    }
+}

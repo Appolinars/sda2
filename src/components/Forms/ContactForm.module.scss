@@ -1,0 +1,62 @@
+@import '@styles/variables';
+
+.form {
+
+    &__input {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    &__extra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 45px;
+    }
+
+    &__checkbox {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        font-weight: 600;
+
+        span {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border: 2px solid $color-grey;
+            outline: none;
+            transition: 0.4s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            will-change: transform;
+        }
+
+        input {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+
+            &:checked+span {
+                width: 11px;
+                border-bottom-color: #0f0;
+                border-right-color: #0f0;
+                border-left-color: transparent;
+                border-top-color: transparent;
+                transform: rotate(45deg) translate(5px, -10px);
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+    }
+}

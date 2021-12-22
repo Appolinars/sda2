@@ -1,0 +1,20 @@
+@import '@styles/variables';
+
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__score {
+        margin-bottom: 10px;
+    }
+
+    &__item + .rating__item {
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rating__item + .rating__item {
+        margin-left: 40px;
+    }
+}

@@ -2,12 +2,17 @@
 
 .projects {
 
+    &__inner {
+        position: relative;
+    }
+
     &__list {
         margin-top: 100px;
     }
 
     &__item {
         margin-bottom: 100px;
+        position: relative;
 
         &:last-child {
             margin-bottom: 0;
@@ -61,10 +66,18 @@
         line-height: 29px;
         max-width: 545px;
         margin: 0 0 0 50px;
+        background: rgba(255, 255, 255, 0.85);
     }
 
     &__slider {
         display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .projects__item {
+        margin-bottom: 30px;
     }
 }
 
@@ -90,7 +103,7 @@
 
     .projects__slider {
         display: block;
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     .projects__content {

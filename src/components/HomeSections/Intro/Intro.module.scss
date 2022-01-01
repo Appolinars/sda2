@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 300px 0 100px;
+    padding: 260px 0 100px;
     position: relative;
 
     &__video {
@@ -68,69 +68,25 @@
     }
 }
 
-.line_1 {
-    position: absolute;
-    right: -30px;
-    bottom: 12px;
-    stroke-dasharray: 1600px;
-    stroke-dashoffset: 1600px;
-    transition: stroke-dashoffset 4s;
-
-    rect {
-        opacity: 0;
-        transition: opacity .4s 4s;
-    }
-
-    &.active {
-        stroke-dashoffset: 0;
-
-        rect {
-            opacity: 1;
-        }
-    }
-}
-
-.line_2 {
-    position: absolute;
-    left: 0;
-    bottom: -100px;
-    stroke-dasharray: 800px;
-    stroke-dashoffset: 800px;
-    transition: stroke-dashoffset 3s 4s;
-
-    rect {
-        opacity: 0;
-        transition: opacity .4s 4s;
-    }
-
-    &.active {
-        stroke-dashoffset: 0;
-
-        rect {
-            opacity: 1;
-        }
-    }
-}
-
-@media (max-width: 991px) {
+@media (max-width: 1600px) {
     .intro {
-        padding: 200px 0 100px;
+        padding: 160px 0 100px;
     }
 
     .intro__title {
         font-size: 60px;
-
-    }
-}
-
-@media (max-width: 576px) {
-    .intro__title {
-        font-size: 36px;
-        line-height: 34px;
     }
 
     .intro__text {
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .intro__title {
+        font-size: 36px;
+        line-height: 34px;
     }
 
     .intro__scroll_icon {

@@ -4,14 +4,21 @@ export const useOnScreen = (ref) => {
   const [isOnScreen, setIsOnScreen] = useState(false);
   const observerRef = useRef(null);
 
-//   if (isOnScreen) {
-//     observerRef.current.disconnect(); 
-//   }
-    useEffect(() => {
-      observerRef.current = new IntersectionObserver(([entry]) =>
-        setIsOnScreen(entry.isIntersecting)
-      );
-    }, []);
+  // play once
+  if (isOnScreen) {
+    observerRef.current.disconnect();
+  }
+
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      ([entry]) => {
+        setIsOnScreen(entry.isIntersecting);
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+  }, []);
 
   useEffect(() => {
     observerRef.current.observe(ref.current);

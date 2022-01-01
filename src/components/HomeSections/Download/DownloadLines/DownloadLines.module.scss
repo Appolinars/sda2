@@ -1,0 +1,39 @@
+@import '@styles/variables';
+
+.line_1 {
+    position: absolute;
+    left: 15px;
+    top: -320px;
+
+    rect {
+        opacity: 0;
+        transition: opacity .4s 2s;
+    }
+
+    &.active {
+        rect {
+            opacity: 1;
+        }
+    }
+}
+
+.line_2 {
+    position: absolute;
+    left: 50%;
+    bottom: -115%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1400px) {
+    .line_1 {
+        left: auto;
+        right: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .line_2 {
+        height: 250px;
+        bottom: -300px;
+    }
+}

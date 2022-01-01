@@ -1,0 +1,29 @@
+@import '@styles/variables';
+
+.line_1 {
+   order: -1;
+   margin-bottom: 15px;
+
+   rect {
+       opacity: 0;
+       transition: opacity .4s 2s;
+   }
+
+   &.active {
+       rect {
+           opacity: 1;
+       }
+   }
+}
+
+.line_2 {
+    margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .line_1,
+    .line_2 {
+        height: 250px;
+    }
+}
+

@@ -1,28 +1,37 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Fade } from "react-awesome-reveal";
+
 import livunityImg from "@images/projects-livunity.jpg";
 import nubodImg from "@images/projects-nubod.png";
 
 import "swiper/css";
 import styles from "./Projects.module.scss";
-
+import ProjectsLine1 from "./ProjectsLines/ProjectsLine1";
+import ProjectsLine2 from "./ProjectsLines/ProjectsLine2";
+import ProjectsLine3 from "./ProjectsLines/ProjectsLine3";
+import ProjectsLine4 from './ProjectsLines/ProjectsLine4';
 
 const Projects = () => {
   return (
     <section className={`${styles.projects} section-padding`}>
       <div className={`${styles.projects__inner} container`}>
         <div className="heading">
-          <h2 className="heading__title">Our projects</h2>
-          <p className="heading__subtitle">
-            We know the paints and needs of healthcare industry in USA and Canada due to the fact
-            that we've conducted many in-depth interviews. Our expertise covers the entire field.
-          </p>
+          <Fade direction="up" duration={1200} cascade damping={0.2}>
+            <h2 className="heading__title">Our projects</h2>
+            <p className="heading__subtitle">
+              We know the paints and needs of healthcare industry in USA and Canada due to the fact
+              that we've conducted many in-depth interviews. Our expertise covers the entire field.
+            </p>
+          </Fade>
         </div>
 
         <ul className={styles.projects__list}>
           <li className={styles.projects__item}>
-            <h3 className={styles.projects__title}>LivUnity</h3>
+            <Fade direction="up" duration={1200}>
+              <h3 className={styles.projects__title}>LivUnity</h3>
+            </Fade>
             <div className={styles.projects__content}>
               <Link href="/">
                 <a className={styles.projects__link}>
@@ -35,7 +44,9 @@ const Projects = () => {
             </div>
           </li>
           <li className={`${styles.projects__item} ${styles.projects__item_reverse}`}>
-            <h3 className={styles.projects__title}>Casename</h3>
+            <Fade direction="up" duration={1200}>
+              <h3 className={styles.projects__title}>Casename</h3>
+            </Fade>
             <div className={styles.projects__content}>
               <Link href="/">
                 <a className={styles.projects__link}>
@@ -46,9 +57,12 @@ const Projects = () => {
                 To the development of umedical platforms with custom functionality
               </p>
             </div>
+            <ProjectsLine2 />
           </li>
           <li className={styles.projects__item}>
-            <h3 className={styles.projects__title}>Nubod</h3>
+            <Fade direction="up" duration={1200}>
+              <h3 className={styles.projects__title}>Nubod</h3>
+            </Fade>
             <div className={styles.projects__content}>
               <Link href="/">
                 <a className={styles.projects__link}>
@@ -60,8 +74,11 @@ const Projects = () => {
                 integration of third-party applications and services
               </p>
             </div>
+            <ProjectsLine3 />
+            <ProjectsLine4 />
           </li>
         </ul>
+        <ProjectsLine1 />
 
         <Swiper slidesPerView={1.2} spaceBetween={25} className={styles.projects__slider}>
           <SwiperSlide>
@@ -111,7 +128,6 @@ const Projects = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        
       </div>
     </section>
   );

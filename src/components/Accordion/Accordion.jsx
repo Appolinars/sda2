@@ -1,8 +1,10 @@
 import { useRef, useState } from "react";
+import { Fade } from "react-awesome-reveal";
+
 import { ArrowDown } from "@components/SVGIcons/SVGIcons";
 import styles from "./Accordion.module.scss";
 
-const Accordion = ({ extraClass, suptitle, title, contentTitle, contentText }) => {
+const Accordion = ({ extraClass, accordion }) => {
   const [active, setActive] = useState(false);
   const contentRef = useRef(null);
 
@@ -19,14 +21,16 @@ const Accordion = ({ extraClass, suptitle, title, contentTitle, contentText }) =
             : `${styles.accordion__head}`
         }
       >
-        <div className={styles.accordion__info}>
-          <p className={styles.accordion__suptitle}>{suptitle}</p>
-          <h4 className={styles.accordion__title}>{title}</h4>
-        </div>
-        <p className={styles.accrodion__toggle}>
-          <span className={styles.accrodion__toggle_text}>Provided solution</span>
-          <ArrowDown iconClass={styles.accordion__arrow} />
-        </p>
+        <Fade direction="left" duration={1200}>
+          <div className={styles.accordion__info}>
+            <p className={styles.accordion__suptitle}>{accordion.suptitle}</p>
+            <h3 className={styles.accordion__title}>{accordion.title}</h3>
+          </div>
+        </Fade>
+          <p className={styles.accrodion__toggle}>
+            <span className={styles.accrodion__toggle_text}>Provided solution</span>
+            <ArrowDown iconClass={styles.accordion__arrow} />
+          </p>
       </div>
       <div
         className={styles.accordion__content}
@@ -34,10 +38,11 @@ const Accordion = ({ extraClass, suptitle, title, contentTitle, contentText }) =
         ref={contentRef}
       >
         <div className={styles.accordion__content_inner}>
-          <p className={styles.accordion__content_title}>{contentTitle}</p>
-          <p className={styles.accordion__content_text}>{contentText}</p>
+          <p className={styles.accordion__content_title}>{accordion.contentTitle}</p>
+          <p className={styles.accordion__content_text}>{accordion.contentText}</p>
         </div>
       </div>
+      {accordion.svgLine}
     </div>
   );
 };

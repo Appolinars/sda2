@@ -2,12 +2,18 @@
 
 .problems {
 
+    &__inner {
+        position: relative;
+    }
+
     &__list {
         margin-top: 150px;
+        padding-bottom: 50px;
     }
 
     &__item {
         margin-bottom: 150px;
+        position: relative;
 
         &:last-child {
             margin-bottom: 0;

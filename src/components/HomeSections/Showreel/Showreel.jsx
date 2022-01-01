@@ -1,5 +1,6 @@
 import { PlayIcon } from "@components/SVGIcons/SVGIcons";
 import { useRef, useState } from "react";
+import ShowreelLines from "./ShowreelLines/ShowreelLines";
 import styles from "./Showreel.module.scss";
 
 const Showreel = () => {
@@ -25,7 +26,11 @@ const Showreel = () => {
       ></video>
       <div className={`${styles.showreel__inner} container`}>
         <div className={styles.showreel__content}>
-          <button className={styles.showreel__btn} onClick={!isPlaying ? handlePlay : handlePause}>
+          <button
+            aria-label="Play showreel video"
+            className={styles.showreel__btn}
+            onClick={!isPlaying ? handlePlay : handlePause}
+          >
             <PlayIcon />
           </button>
           <div className={styles.showreel__info}>
@@ -33,6 +38,7 @@ const Showreel = () => {
             <p className={styles.showreel__subtitle}>2021</p>
           </div>
         </div>
+        <ShowreelLines />
       </div>
     </section>
   );

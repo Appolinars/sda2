@@ -1,0 +1,14 @@
+@import '@styles/variables';
+
+.line_1 {
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+
+@media (max-width: 576px) {
+    .line_1 {
+        left: 50px;
+    }
+}

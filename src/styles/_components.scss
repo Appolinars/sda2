@@ -9,6 +9,7 @@
     color: $color-white;
     cursor: pointer;
     transition: .4s;
+    will-change: transform;
 
     svg {
         margin-left: 10px;

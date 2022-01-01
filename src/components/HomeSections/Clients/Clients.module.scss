@@ -2,6 +2,10 @@
 
 .clients {
 
+    &__inner {
+        position: relative;
+    }
+
     &__heading {
         max-width: 360px;
     }
@@ -15,6 +19,7 @@
     &__info {
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 
     &__text {
@@ -29,8 +34,12 @@
 
 @media (max-width: 1400px) {
 
+    .clients {
+        overflow: hidden;
+    }
+
     .clients__content {
-        margin-top: 100px;
+        margin-top: 30px;
     }
 
     .clients__info {
@@ -50,11 +59,12 @@
 
     .clients__info {
         margin-right: 0;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
     }
 
     .clients__text {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        padding-right: 60px;
     }
 
     .clients__img {

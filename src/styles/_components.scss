@@ -66,6 +66,10 @@
     }
 }
 
+.reveal-animated {
+    will-change: transform;
+}
+
 @media (max-width: 991px) {
     .section-padding {
         padding: 70px 0;

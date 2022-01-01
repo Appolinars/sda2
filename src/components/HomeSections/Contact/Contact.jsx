@@ -19,7 +19,7 @@ const Contact = () => {
         <div className={`${styles.contact__container} container`}>
           <div className={styles.contact__inner}>
             <div className="heading">
-              <Fade direction="up" duration={1200} cascade damping={0.2}>
+              <Fade direction="up" duration={1200} cascade damping={0.2} triggerOnce>
                 <h2 className="heading__title">Let's discuss your ideas</h2>
                 <p className="heading__subtitle">
                   Fill out this form or email us at{" "}

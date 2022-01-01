@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.footer__inner} container`}>
-        <Fade direction="up" duration={1200}>
+        <Fade direction="up" duration={1200} triggerOnce>
           <div className="heading">
             <h2 className="heading__title">Partner with us</h2>
           </div>

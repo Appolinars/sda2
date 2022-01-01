@@ -37,7 +37,7 @@ const Problems = () => {
   return (
     <section className={`${styles.problems} section-padding`}>
       <div className={`${styles.problems__inner} container`}>
-        <Fade direction="up" duration={1200}>
+        <Fade direction="up" duration={1200} triggerOnce>
           <div className={`${styles.problems__heading} heading`}>
             <h2 className="heading__title">Problems of our clients that we already solved</h2>
           </div>

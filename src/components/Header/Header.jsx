@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { Logo } from "../SVGIcons/SVGIcons";
 import styles from "./Header.module.scss";
@@ -53,21 +53,21 @@ const Header = ({ openModal }) => {
           className={burgerActive ? `${styles.nav} ${styles.nav_active}` : `${styles.nav}`}
           onClick={toggleBurgerMenu}
         >
-          <ul className={styles.nav__list}>
+          <ul className={styles.nav__list} onClick={(e) => e.stopPropagation()}>
             <li className={styles.nav__item}>
-              <a href="&/" className={styles.nav__link}>
-                Cases
-              </a>
+              <Link href="/#projects">
+                <a className={styles.nav__link}>Cases</a>
+              </Link>
             </li>
             <li className={styles.nav__item}>
-              <a href="&/" className={styles.nav__link}>
-                Blog
-              </a>
+              <Link href="/blog">
+                <a className={styles.nav__link}>Blog</a>
+              </Link>
             </li>
             <li className={styles.nav__item}>
-              <a href="&/" className={styles.nav__link}>
-                About us
-              </a>
+              <Link href="/#about">
+                <a className={styles.nav__link}>About us</a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -15,10 +15,10 @@ import ProjectsLine4 from './ProjectsLines/ProjectsLine4';
 
 const Projects = () => {
   return (
-    <section className={`${styles.projects} section-padding`}>
+    <section className={`${styles.projects} section-padding`} id="projects">
       <div className={`${styles.projects__inner} container`}>
         <div className="heading">
-          <Fade direction="up" duration={1200} cascade damping={0.2}>
+          <Fade direction="up" duration={1200} cascade damping={0.2} triggerOnce>
             <h2 className="heading__title">Our projects</h2>
             <p className="heading__subtitle">
               We know the paints and needs of healthcare industry in USA and Canada due to the fact
@@ -29,7 +29,7 @@ const Projects = () => {
 
         <ul className={styles.projects__list}>
           <li className={styles.projects__item}>
-            <Fade direction="up" duration={1200}>
+            <Fade direction="up" duration={1200} triggerOnce>
               <h3 className={styles.projects__title}>LivUnity</h3>
             </Fade>
             <div className={styles.projects__content}>
@@ -44,7 +44,7 @@ const Projects = () => {
             </div>
           </li>
           <li className={`${styles.projects__item} ${styles.projects__item_reverse}`}>
-            <Fade direction="up" duration={1200}>
+            <Fade direction="up" duration={1200} triggerOnce>
               <h3 className={styles.projects__title}>Casename</h3>
             </Fade>
             <div className={styles.projects__content}>
@@ -60,7 +60,7 @@ const Projects = () => {
             <ProjectsLine2 />
           </li>
           <li className={styles.projects__item}>
-            <Fade direction="up" duration={1200}>
+            <Fade direction="up" duration={1200} triggerOnce>
               <h3 className={styles.projects__title}>Nubod</h3>
             </Fade>
             <div className={styles.projects__content}>

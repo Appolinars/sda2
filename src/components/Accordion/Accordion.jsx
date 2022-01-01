@@ -21,16 +21,16 @@ const Accordion = ({ extraClass, accordion }) => {
             : `${styles.accordion__head}`
         }
       >
-        <Fade direction="left" duration={1200}>
+        <Fade direction="left" duration={1200} triggerOnce>
           <div className={styles.accordion__info}>
             <p className={styles.accordion__suptitle}>{accordion.suptitle}</p>
             <h3 className={styles.accordion__title}>{accordion.title}</h3>
           </div>
         </Fade>
-          <p className={styles.accrodion__toggle}>
-            <span className={styles.accrodion__toggle_text}>Provided solution</span>
-            <ArrowDown iconClass={styles.accordion__arrow} />
-          </p>
+        <p className={styles.accrodion__toggle}>
+          <span className={styles.accrodion__toggle_text}>Provided solution</span>
+          <ArrowDown iconClass={styles.accordion__arrow} />
+        </p>
       </div>
       <div
         className={styles.accordion__content}

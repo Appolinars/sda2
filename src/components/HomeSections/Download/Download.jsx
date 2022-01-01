@@ -7,7 +7,7 @@ const Download = () => {
   return (
     <section className={styles.download}>
       <div className={`${styles.download__inner} container`}>
-        <Fade direction="up" duration={1200} cascade damping={0.2}>
+        <Fade direction="up" duration={1200} cascade damping={0.2} triggerOnce>
           <div className={`${styles.download__heading} heading`}>
             <h2 className="heading__title">
               General data protection regulation. Best practices & checklists.

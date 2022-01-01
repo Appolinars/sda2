@@ -13,10 +13,10 @@ import WorkLine4 from "./WorkLines/WorkLine4";
 
 const Work = () => {
   return (
-    <section className={`${styles.work} section-padding`}>
+    <section className={`${styles.work} section-padding`} id="about">
       <div className={`${styles.work__inner} container`}>
         <div className="heading">
-          <Fade direction="up" duration={1200} cascade damping={0.2}>
+          <Fade direction="up" duration={1200} cascade damping={0.2} triggerOnce>
             <h2 className="heading__title">How we work</h2>
             <p className="heading__subtitle">
               The development of such great projects requires a lot of responsibility and a
@@ -31,7 +31,7 @@ const Work = () => {
         </div>
         <ul className={styles.work__list}>
           <li className={styles.work__item}>
-            <Fade direction="up" duration={1200}>
+            <Fade direction="up" duration={1200} triggerOnce>
               <div className={styles.work__top}>
                 <p className={styles.work__count}>01</p>
                 <h3 className={styles.work__title}>Discovery</h3>
@@ -43,14 +43,14 @@ const Work = () => {
               </div>
             </Fade>
             <div className={styles.work__content}>
-              <Fade direction="left" duration={1200}>
+              <Fade direction="left" duration={1200} triggerOnce>
                 <p className={styles.work__text}>
                   This phase allows to assess correctly the expected result and potential risks.
                   This makes it possible to see the potential of the project and correctly allocate
                   resources.
                 </p>
               </Fade>
-              <Zoom duration={1200}>
+              <Zoom duration={1200} triggerOnce className="reveal-animated">
                 <div className={styles.work__img}>
                   <Image src={discoveryDiagram} alt="Discovery" quality={95} />
                 </div>
@@ -66,7 +66,7 @@ const Work = () => {
             <WorkLine2 />
           </li>
           <li className={styles.work__item}>
-            <Fade direction="up" duration={1200}>
+            <Fade direction="up" duration={1200} triggerOnce>
               <div className={styles.work__top}>
                 <p className={styles.work__count}>02</p>
                 <h3 className={styles.work__title}>Development</h3>
@@ -81,14 +81,14 @@ const Work = () => {
               </div>
             </Fade>
             <div className={styles.work__content}>
-              <Fade direction="left" duration={1200}>
+              <Fade direction="left" duration={1200} triggerOnce>
                 <p className={styles.work__text}>
                   Agile methodology works best for the implementation of such projects. The
                   development process is divided into sprints. This allows to see progress, identify
                   bottlenecks in a timely manner and adjust the project during its development.
                 </p>
               </Fade>
-              <Zoom duration={1200}>
+              <Zoom duration={1200} triggerOnce className="reveal-animated">
                 <div className={styles.work__img}>
                   <Image src={developmentDiagram} alt="Development" quality={95} />
                 </div>
@@ -105,7 +105,7 @@ const Work = () => {
             <WorkLine3 />
           </li>
           <li className={styles.work__item}>
-            <Fade direction="up" duration={1200}>
+            <Fade direction="up" duration={1200} triggerOnce>
               <div className={styles.work__top}>
                 <p className={styles.work__count}>03</p>
                 <h3 className={styles.work__title}>Release</h3>
@@ -117,13 +117,13 @@ const Work = () => {
               </div>
             </Fade>
             <div className={styles.work__content}>
-              <Fade direction="left" duration={1200}>
+              <Fade direction="left" duration={1200} triggerOnce>
                 <p className={styles.work__text}>
                   Allows, taking into account all the features, to deploy correctly and ensure the
                   required functioning of the project in any specific environment.
                 </p>
               </Fade>
-              <Zoom duration={1200}>
+              <Zoom duration={1200} triggerOnce className="reveal-animated">
                 <div className={styles.work__img}>
                   <Image src={releaseDiagram} alt="Release" quality={95} />
                 </div>

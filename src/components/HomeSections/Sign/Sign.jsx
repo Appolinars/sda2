@@ -8,7 +8,7 @@ const Sign = () => {
   return (
     <section className={styles.sign}>
       <div className={`${styles.sign__inner} container`}>
-        <Fade direction="up" duration={1200} cascade damping={0.2}>
+        <Fade direction="up" duration={1200} cascade damping={0.2} triggerOnce>
           <div className={`${styles.sign__heading} heading`}>
             <h2 className="heading__title">Sign up for our newsletter</h2>
             <p className="heading__subtitle">

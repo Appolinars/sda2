@@ -7,5 +7,7 @@
   "body": "# Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.\n\nSed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ip\n\n* awdawdawd\n* awdawdxzc\n* 123123\n* zc1122\n\n## AWdawd dawd awdawd awd",
   "category": [
     "Healthcare"
-  ]
+  ],
+  "bodyHtml": "<h1>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</h1>\n<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ip</p>\n<ul>\n<li>awdawdawd</li>\n<li>awdawdxzc</li>\n<li>123123</li>\n<li>zc1122</li>\n</ul>\n<h2>AWdawd dawd awdawd awd</h2>\n",
+  "dateFormatted": "January 12, 2022"
 }

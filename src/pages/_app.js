@@ -1,5 +1,4 @@
 import Script from "next/script";
-import Head from 'next/head';
 import Layout from "@components/Layout/Layout";
 import "@styles/app.scss";
 

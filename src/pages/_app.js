@@ -7,9 +7,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
+      {/* <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script> */}
       {getLayout(<Component {...pageProps} />)}
-      <Script src="/netlifyIdentity.js"></Script>
+      {/* <Script src="/netlifyIdentity.js"></Script> */}
     </>
   );
 }

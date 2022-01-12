@@ -1,0 +1,11 @@
+{
+  "date": "2022-01-12T16:29:18.631Z",
+  "title": "Update test",
+  "slug": "update-test",
+  "preview_img": "/static/images/blog/screenshot_70.png",
+  "main_img": "/static/images/blog/screenshot_62.png",
+  "body": "# AWDAWd adwAWD awd awd awda\n\nAWD awdAW da wdaw dawd awdaw dawd\n\n\n\n* Use `next start` to run a server, which includes the Image Optimization API.\n\n  * Use any provider which supports Image Optimization (like Vercel).\n  * Configure a third-party loader in `next.config.js`.\n  * Use the `loader` prop for `next/image`.\n\n## AWd DAWd awd awdaw dawd aw\n\n![123](/static/images/blog/screenshot_24.png \"123123123 123123123\")\n\n### adwdawd\n\nawd awdAWD AWD AWDAW dAWD awDWad",
+  "category": [
+    "JavaScript"
+  ]
+}

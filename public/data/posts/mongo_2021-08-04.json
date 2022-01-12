@@ -1,0 +1,14 @@
+{
+  "date": "2021-08-04T07:58:30.381Z",
+  "title": "Mongo",
+  "slug": "mongo",
+  "main_img": "/static/images/blog/screenshot_22.png",
+  "body": "Widgets are specified as collection fields in the Netlify CMS config.yml file. Note that YAML syntax allows lists and objects to be written in block or inline style, and the code samples below include a mix of both.",
+  "category": [
+    "Mongo",
+    "Firebase",
+    "PHP"
+  ],
+  "bodyHtml": "<p>Widgets are specified as collection fields in the Netlify CMS config.yml file. Note that YAML syntax allows lists and objects to be written in block or inline style, and the code samples below include a mix of both.</p>\n",
+  "dateFormatted": "August 4, 2021"
+}

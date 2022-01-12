@@ -1,5 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
+import { ldJson } from "public/ldjson";
+
 class MyDocument extends Document {
   render() {
     return (
@@ -31,6 +33,11 @@ class MyDocument extends Document {
           <meta name="keywords" content="SDA, SDA Company" />
           <link rel="preload" href="/static/fonts/Gilroy-Regular.woff2" as="font" crossOrigin="" />
           <link rel="preload" href="/static/fonts/Gilroy-Semibold.woff2" as="font" crossOrigin="" />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
+          />
         </Head>
         <body>
           <Main />

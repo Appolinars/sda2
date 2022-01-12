@@ -1,0 +1,13 @@
+{
+  "date": "2021-08-04T07:57:52.038Z",
+  "title": "sql",
+  "slug": "sql",
+  "body": "To see working examples of all of the built-in widgets, try making a 'Kitchen Sink' collection item on the CMS demo site. (No login required: click the login button and the CMS will open.) You can refer to the demo configuration code to see how each field was configured.",
+  "category": [
+    "MySQL",
+    "PostgreSQL"
+  ],
+  "main_img": "/static/images/blog/screenshot_4.png",
+  "bodyHtml": "<p>To see working examples of all of the built-in widgets, try making a 'Kitchen Sink' collection item on the CMS demo site. (No login required: click the login button and the CMS will open.) You can refer to the demo configuration code to see how each field was configured.</p>\n",
+  "dateFormatted": "August 4, 2021"
+}

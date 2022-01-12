@@ -1,0 +1,14 @@
+{
+  "date": "2021-08-04T08:15:43.149Z",
+  "title": "Path test",
+  "slug": "path-test",
+  "main_img": "/static/images/blog/design-2.jpg",
+  "body": "The name of a date field for parsing date-based template tags from preview_path. If this field is not provided and preview_path contains date-based template tags (eg. {{year}}), Netlify CMS will attempt to infer a usable date field by checking for common date field names, such as date. If you find that you need to specify a date field, you can use preview_path_date_field to tell Netlify CMS which field to use for preview path template tags.",
+  "category": [
+    "Mongo",
+    "Node.JS",
+    "NextJS"
+  ],
+  "bodyHtml": "<p>The name of a date field for parsing date-based template tags from preview_path. If this field is not provided and preview_path contains date-based template tags (eg. {{year}}), Netlify CMS will attempt to infer a usable date field by checking for common date field names, such as date. If you find that you need to specify a date field, you can use preview_path_date_field to tell Netlify CMS which field to use for preview path template tags.</p>\n",
+  "dateFormatted": "August 4, 2021"
+}

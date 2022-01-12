@@ -1,0 +1,13 @@
+{
+  "body": "Lorem Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfseSome text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse",
+  "img": "/static/images/blog-img.jpg",
+  "slug": "second-post",
+  "bodyHtml": "<p>Lorem Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfseSome text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse</p>\n",
+  "dateFormatted": "October 18, 2020",
+  "date": "2020-10-18T01:45:39.821Z",
+  "title": "Second post",
+  "main_img": "/static/images/blog/design-2.jpg",
+  "category": [
+    "Ui/UX"
+  ]
+}

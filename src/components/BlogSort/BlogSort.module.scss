@@ -1,0 +1,70 @@
+@import '@styles/variables';
+
+.sort {
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+
+    &__picked {
+        background-color: $color-white;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+        padding-right: 15px;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 4.5px 0 4.5px;
+            border-color: $color-dark transparent transparent transparent;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform .4s;
+        }
+
+        &.active::after {
+            transform: translateY(-50%) rotate(-180deg);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        background-color: $color-white;
+        box-shadow: 0 0 2px 1px rgba($color: $color-grey, $alpha: 0.5);
+        border-radius: 4px;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        z-index: 1;
+        animation: animateSortList .3s;
+    }
+
+    @keyframes animateSortList {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &__item {
+        white-space: nowrap;
+        text-align: left;
+        padding: 5px 10px;
+        background-color: transparent;
+        border: none;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: lighten($color: $color-grey, $amount: 30%);
+        }
+    }
+}

@@ -11,11 +11,9 @@ const Header = ({ openModal }) => {
   const disableBodyScroll = useCallback(() => {
     if (burgerActive) {
       document.body.style.overflow = "hidden";
-      // document.body.style.paddingRight = "10px"; // Prevent page-jump when remove scroll
     } else {
       document.body.style.overflow = "unset";
       document.body.style.overflowX = "hidden";
-      // document.body.style.paddingRight = "0";
     }
   }, [burgerActive]);
 
@@ -56,17 +54,23 @@ const Header = ({ openModal }) => {
           <ul className={styles.nav__list} onClick={(e) => e.stopPropagation()}>
             <li className={styles.nav__item}>
               <Link href="/#projects">
-                <a className={styles.nav__link}>Cases</a>
+                <a className={styles.nav__link} onClick={() => setBurgerActive(false)}>
+                  Cases
+                </a>
               </Link>
             </li>
             <li className={styles.nav__item}>
               <Link href="/blog">
-                <a className={styles.nav__link}>Blog</a>
+                <a className={styles.nav__link} onClick={() => setBurgerActive(false)}>
+                  Blog
+                </a>
               </Link>
             </li>
             <li className={styles.nav__item}>
               <Link href="/#about">
-                <a className={styles.nav__link}>About us</a>
+                <a className={styles.nav__link} onClick={() => setBurgerActive(false)}>
+                  About us
+                </a>
               </Link>
             </li>
           </ul>

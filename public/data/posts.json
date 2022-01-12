@@ -1,0 +1,248 @@
+[
+  {
+    "date": "2021-08-04T08:15:43.149Z",
+    "title": "Path test",
+    "slug": "path-test",
+    "main_img": "/static/images/blog/design-2.jpg",
+    "body": "The name of a date field for parsing date-based template tags from preview_path. If this field is not provided and preview_path contains date-based template tags (eg. {{year}}), Netlify CMS will attempt to infer a usable date field by checking for common date field names, such as date. If you find that you need to specify a date field, you can use preview_path_date_field to tell Netlify CMS which field to use for preview path template tags.",
+    "category": [
+      "Mongo",
+      "Node.JS",
+      "NextJS"
+    ],
+    "bodyHtml": "<p>The name of a date field for parsing date-based template tags from preview_path. If this field is not provided and preview_path contains date-based template tags (eg. {{year}}), Netlify CMS will attempt to infer a usable date field by checking for common date field names, such as date. If you find that you need to specify a date field, you can use preview_path_date_field to tell Netlify CMS which field to use for preview path template tags.</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:59:09.824Z",
+    "category": [
+      "Healthcare",
+      "Online Media",
+      "Fintech"
+    ],
+    "title": "Tagstags",
+    "slug": "tagstags",
+    "body": "Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets. Click the widget names in the sidebar to jump to specific widget details. We’re always adding new widgets, and you can also create your own!",
+    "main_img": "/static/images/blog/screenshot_15.png",
+    "bodyHtml": "<p>Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets. Click the widget names in the sidebar to jump to specific widget details. We’re always adding new widgets, and you can also create your own!</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:58:30.381Z",
+    "title": "Mongo",
+    "slug": "mongo",
+    "main_img": "/static/images/blog/screenshot_22.png",
+    "body": "Widgets are specified as collection fields in the Netlify CMS config.yml file. Note that YAML syntax allows lists and objects to be written in block or inline style, and the code samples below include a mix of both.",
+    "category": [
+      "Mongo",
+      "Firebase",
+      "PHP"
+    ],
+    "bodyHtml": "<p>Widgets are specified as collection fields in the Netlify CMS config.yml file. Note that YAML syntax allows lists and objects to be written in block or inline style, and the code samples below include a mix of both.</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:57:52.038Z",
+    "title": "sql",
+    "slug": "sql",
+    "body": "To see working examples of all of the built-in widgets, try making a 'Kitchen Sink' collection item on the CMS demo site. (No login required: click the login button and the CMS will open.) You can refer to the demo configuration code to see how each field was configured.",
+    "category": [
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "main_img": "/static/images/blog/screenshot_4.png",
+    "bodyHtml": "<p>To see working examples of all of the built-in widgets, try making a 'Kitchen Sink' collection item on the CMS demo site. (No login required: click the login button and the CMS will open.) You can refer to the demo configuration code to see how each field was configured.</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:56:48.824Z",
+    "title": "tags44",
+    "slug": "tags-44",
+    "main_img": "/static/images/blog/design-2.jpg",
+    "body": "pattern: add field validation by specifying a list with a regex pattern and an error message; more extensive validation can be achieved with custom widgets",
+    "category": [
+      "React",
+      "NextJS",
+      "Express",
+      "MySQL"
+    ],
+    "bodyHtml": "<p>pattern: add field validation by specifying a list with a regex pattern and an error message; more extensive validation can be achieved with custom widgets</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:55:58.081Z",
+    "title": "tags5",
+    "slug": "tags-5",
+    "main_img": "/static/images/blog/screenshot_15.png",
+    "body": "media_folder (Beta): file path where uploaded files will be saved specific to this control. Paths can be relative to a collection folder (e.g. files will add the file to a sub-folder in the collection folder) or absolute with reference to the base of the repo which needs to begin with / (e.g /static/files will save uploaded files to the static folder in a sub folder named files)",
+    "category": [
+      "Github",
+      "Outsource",
+      "Outstaff",
+      "Backend"
+    ],
+    "bodyHtml": "<p>media_folder (Beta): file path where uploaded files will be saved specific to this control. Paths can be relative to a collection folder (e.g. files will add the file to a sub-folder in the collection folder) or absolute with reference to the base of the repo which needs to begin with / (e.g /static/files will save uploaded files to the static folder in a sub folder named files)</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:55:14.856Z",
+    "title": "tags4",
+    "slug": "tags-4",
+    "main_img": "/static/images/blog/screenshot_21.png",
+    "body": "config: a configuration object that will be passed directly to the media library being used - available options are determined by the library",
+    "category": [
+      "JavaScript",
+      "Laravel",
+      "PHP",
+      "Elementor"
+    ],
+    "bodyHtml": "<p>config: a configuration object that will be passed directly to the media library being used - available options are determined by the library</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:54:41.521Z",
+    "title": "tags3",
+    "slug": "tags-3",
+    "main_img": "/static/images/blog/screenshot_20.png",
+    "body": "tagsgsgsgsgs sgsr sgs rgsrg srgsrgsrgsr",
+    "category": [
+      "JavaScript",
+      "React",
+      "VueJS"
+    ],
+    "bodyHtml": "<p>tagsgsgsgsgs sgsr sgs rgsrg srgsrgsrgsr</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:54:02.288Z",
+    "title": "Tags2",
+    "slug": "tags-2",
+    "main_img": "/static/images/blog/design-2.jpg",
+    "body": "Tags test",
+    "category": [
+      "Healthcare",
+      "Fintech",
+      "Outstaff"
+    ],
+    "bodyHtml": "<p>Tags test</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "date": "2021-08-04T07:34:15.135Z",
+    "category": [
+      "JavaScript",
+      "VueJS",
+      "MySQL",
+      "Express"
+    ],
+    "title": "Tags test",
+    "slug": "tags-test",
+    "main_img": "/static/images/blog/screenshot_24.png",
+    "body": "Every time you open a pull request, or push new changes to a branch, Netlify automatically builds a preview with a unique URL. Like a staging environment for every PR or branch, previews are perfect for testing and collaboration.",
+    "bodyHtml": "<p>Every time you open a pull request, or push new changes to a branch, Netlify automatically builds a preview with a unique URL. Like a staging environment for every PR or branch, previews are perfect for testing and collaboration.</p>\n",
+    "dateFormatted": "August 4, 2021"
+  },
+  {
+    "category": [
+      "React"
+    ],
+    "date": "2021-08-03T15:16:04.115Z",
+    "title": "SDSD SD ASDDSDSW",
+    "slug": "SDSD-SD_ASDDSDSW",
+    "main_img": "/static/images/blog/screenshot_21.png",
+    "body": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"",
+    "bodyHtml": "<p>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"</p>\n",
+    "dateFormatted": "August 3, 2021"
+  },
+  {
+    "category": [
+      "Outsource",
+      "Outstaff"
+    ],
+    "date": "2021-08-03T14:36:32.766Z",
+    "title": "Slug testing post",
+    "slug": "slug-test",
+    "main_img": "/static/images/blog/design-2.jpg",
+    "body": "123",
+    "bodyHtml": "<p>123</p>\n",
+    "dateFormatted": "August 3, 2021"
+  },
+  {
+    "category": [
+      "NextJS"
+    ],
+    "date": "2021-08-03T14:27:53.070Z",
+    "title": "Another post",
+    "slug": "another-post",
+    "main_img": "/static/images/blog/design-2.jpg",
+    "body": "Post content adskasdka adasda dasd asd",
+    "bodyHtml": "<p>Post content adskasdka adasda dasd asd</p>\n",
+    "dateFormatted": "August 3, 2021"
+  },
+  {
+    "category": [
+      "Healthcare"
+    ],
+    "date": "2021-08-03T13:35:57.176Z",
+    "title": "Why Hire Ukrainian Software Developers for Outsourcing in IT? ",
+    "slug": "why-hire-1",
+    "body": "An increase in the Ukrainian tech ecosystem reaching $8.4B of industry export volume in 2025, a network of 200K IT representatives, and high-potential technical education have created conditions for the country to become one of the top European IT destinations. High-level technical professionalism, English language knowledge (70% upper-intermediate level), proficiency in developing industries (AI, Go, Big Data, etc.) have put Ukrainian developers 5th on the list of the world's top IT professionals.  \n\nCompanies like Apple, Microsoft, Samsung recruit Ukrainian developers to create innovative software products. \n\nMotivation to hire Ukrainian IT outsourcing: \n\n\\#1 outsourcing market in Eastern Europe (Outsourcing Journal)  \n\noffshore location in 2017 (GSA) \n\n\\#1 in Central and Eastern Europe in outsourcing scope (CEEOA) \n\none of the leading offshore destinations in Europe, the Middle East, and Africa (top 20- Gartner) \n\none of the leading countries by the performance of outsourcing activities (top 50 - A.T. Kearney) \n\none of the leading IT services exporters (top 25 - PwC) \n\nSkype, IBM, Boeing, Ericsson, Siemens, and other tech global companies hire software developers in Ukraine because of: \n\n200,000+ IT industry representatives \n\n36,000+ graduate from technical higher educational institutions each year \n\n1500+ businesses in software development \n\n2,000+ startups with high potential \n\n110+ international Research & Development centers \n\nboisterous tech community \n\n80% of Ukrainian software developers know the English language \n\ncultural adaptability and intractability \n\nvalue for money factor \n\nfavorable business climate \n\nconvenient time-zone for cooperation \n\n11 official holidays with paid time off",
+    "main_img": "/static/images/blog/screenshot_22.png",
+    "bodyHtml": "<p>An increase in the Ukrainian tech ecosystem reaching $8.4B of industry export volume in 2025, a network of 200K IT representatives, and high-potential technical education have created conditions for the country to become one of the top European IT destinations. High-level technical professionalism, English language knowledge (70% upper-intermediate level), proficiency in developing industries (AI, Go, Big Data, etc.) have put Ukrainian developers 5th on the list of the world's top IT professionals.</p>\n<p>Companies like Apple, Microsoft, Samsung recruit Ukrainian developers to create innovative software products.</p>\n<p>Motivation to hire Ukrainian IT outsourcing:</p>\n<p>#1 outsourcing market in Eastern Europe (Outsourcing Journal)</p>\n<p>offshore location in 2017 (GSA)</p>\n<p>#1 in Central and Eastern Europe in outsourcing scope (CEEOA)</p>\n<p>one of the leading offshore destinations in Europe, the Middle East, and Africa (top 20- Gartner)</p>\n<p>one of the leading countries by the performance of outsourcing activities (top 50 - A.T. Kearney)</p>\n<p>one of the leading IT services exporters (top 25 - PwC)</p>\n<p>Skype, IBM, Boeing, Ericsson, Siemens, and other tech global companies hire software developers in Ukraine because of:</p>\n<p>200,000+ IT industry representatives</p>\n<p>36,000+ graduate from technical higher educational institutions each year</p>\n<p>1500+ businesses in software development</p>\n<p>2,000+ startups with high potential</p>\n<p>110+ international Research &#x26; Development centers</p>\n<p>boisterous tech community</p>\n<p>80% of Ukrainian software developers know the English language</p>\n<p>cultural adaptability and intractability</p>\n<p>value for money factor</p>\n<p>favorable business climate</p>\n<p>convenient time-zone for cooperation</p>\n<p>11 official holidays with paid time off</p>\n",
+    "dateFormatted": "August 3, 2021"
+  },
+  {
+    "category": [
+      "Express",
+      "Node.JS"
+    ],
+    "date": "2021-08-03T13:31:23.631Z",
+    "title": "cvcvchvuvjh",
+    "slug": "cvcvchvuvjh",
+    "main_img": "/static/images/blog/screenshot_4.png",
+    "body": "The file widget allows editors to upload a file or select an existing one from the media library. The path to the file will be saved to the field as a string.\n\n* **Name:** `file`\n* **UI:** file picker button opens media gallery\n* **Data type:** file path string\n* **Options:**\n\n  * `default`: accepts a file path string; defaults to null\n  * `media_library`: media library settings to apply when a media library is opened by the current widget\n\n    * `allow_multiple`: *(default: `true`)* when set to `false`, prevents multiple selection for any media library extension, but must be supported by the extension in use\n    * `config`: a configuration object that will be passed directly to the media library being used - available options are determined by the library\n    * `media_folder` (Beta): file path where uploaded files will be saved specific to this control. Paths can be relative to a collection folder (e.g. `files` will add the file to a sub-folder in the collection folder) or absolute with reference to the base of the repo which needs to begin with `/` (e.g `/static/files` will save uploaded files to the `static` folder in a sub folder named `files`)\n    * `choose_url`: *(default: `true`)* when set to `false`, the \"Insert from URL\" button will be hidden",
+    "bodyHtml": "<p>The file widget allows editors to upload a file or select an existing one from the media library. The path to the file will be saved to the field as a string.</p>\n<ul>\n<li>\n<p><strong>Name:</strong> <code>file</code></p>\n</li>\n<li>\n<p><strong>UI:</strong> file picker button opens media gallery</p>\n</li>\n<li>\n<p><strong>Data type:</strong> file path string</p>\n</li>\n<li>\n<p><strong>Options:</strong></p>\n<ul>\n<li>\n<p><code>default</code>: accepts a file path string; defaults to null</p>\n</li>\n<li>\n<p><code>media_library</code>: media library settings to apply when a media library is opened by the current widget</p>\n<ul>\n<li><code>allow_multiple</code>: <em>(default: <code>true</code>)</em> when set to <code>false</code>, prevents multiple selection for any media library extension, but must be supported by the extension in use</li>\n<li><code>config</code>: a configuration object that will be passed directly to the media library being used - available options are determined by the library</li>\n<li><code>media_folder</code> (Beta): file path where uploaded files will be saved specific to this control. Paths can be relative to a collection folder (e.g. <code>files</code> will add the file to a sub-folder in the collection folder) or absolute with reference to the base of the repo which needs to begin with <code>/</code> (e.g <code>/static/files</code> will save uploaded files to the <code>static</code> folder in a sub folder named <code>files</code>)</li>\n<li><code>choose_url</code>: <em>(default: <code>true</code>)</em> when set to <code>false</code>, the \"Insert from URL\" button will be hidden</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
+    "dateFormatted": "August 3, 2021"
+  },
+  {
+    "body": "\n\n4. 2,000+ startups with high potential \n\n* The top Ukrainian startups are: \n* Jooble \n* DepositPhotos \n* Grammarly \n\nThe world’s top companies demonstrate great interest in Ukrainian startup development. Google has bought Viewdle – a face-recognition app, Snapchat has purchased Looksery – a real-time face modification tool, and Oracle owns Maxymiser – a cloud-based software for marketers.  \n\nKyiv has become a rapidly-growing tech hub with investors than cities like Warsaw, Vienna, Oslo, and Copenhagen (7), including AVentures Capital, Chernovetsky Investment Group (CIG), Digital Future, Imperious Group, SMRK, TA Ventures, and Vostok Ventures. \n\n![111](/static/images/blog/screenshot_21.png \"1111\")\n\nUkrainian IT professionals have developed loyal business relationships with clients from main European centers with venture capital funds like the UK, Germany, the Netherlands, etc. Consequently, venture capital investment in Ukrainian startups amounts to US$258 million in 2017 and US$336.9 million in 2018 and has been accelerating confidently. \n\n5. 110+ international Research & Development centers \n\nUkraine is considered to be one of the 50 most innovative global economies (5) and is the motherland to over 110 R&D centers for the world's biggest tech companies including Microsoft, Samsung Electronics, Apple, Skype, IBM, Boeing, Ericsson, Siemens, Oracle, Magento, and Wargaming, and those are only a part of the list. Most of them have become a part of the Ukrainian business community through M&As, partner R&Ds, or outstaffing companies.  \n\n6. Boisterous tech community \n\nAgile Eastern Europe Conference, PyCon Ukraine, iForum, IT Arena, and DEV_Challenge are the greatest tech events among the variety all over the country. On such occasions, the chances to communicate with other professionals, share expertise, and follow the experiences of the most outstanding industry leaders are provided for Ukrainian IT representatives. The study published recently on developers.org.ua has shown that 60% of Ukrainian developers attend professional IT events on a regular basis.  \n\nThe 5 leading Ukrainian IT Communities are in Kyiv (25+ companies), Kharkiv (73 companies), Lviv, Dnipro (29 companies), and Odesa (18 companies).  \n\nThe greatest tech events draw over 7,000 visitors and international speakers from the world's leading companies like Skype, IBM, HP, SAP, Intel, and Dell, to name a few. In the regions and on a local level less significant conferences are organized, although their value should not be underestimated as they cover highly-discussed topics like AI, big data, virtual and augmented reality, data science, etc.  \n\n7. 80% of Ukrainian software developers know the English language \n\n80% of Ukraine’s tech professionals speak English on an intermediate or higher level (9). The greatest part of software development and IT outsourcing companies in Ukraine provide English tutorials for the teams to raise their English proficiency. \n\n8. Cultural adaptability and intractability \n\nWestern businesses' work ethics are rather identical to the ones prevailing in the Ukrainian IT outsourcing industry. Developers in Ukraine are not merely service providers. They are willing to face challenges and unpredictable situations, take personal responsibility for their projects and take great effort to succeed at the highest level. 60% of Ukrainian developers dedicate additional time to the improvement of their skills: study educational materials, attend classes or IT conferences. \n\nThis works in particular in the circumstances of direct communication, when no third-party is involved.",
+    "slug": "awesome-post",
+    "preview_img": "/static/images/blog/screenshot_15.png",
+    "bodyHtml": "<ol start=\"4\">\n<li>2,000+ startups with high potential</li>\n</ol>\n<ul>\n<li>The top Ukrainian startups are:</li>\n<li>Jooble</li>\n<li>DepositPhotos</li>\n<li>Grammarly</li>\n</ul>\n<p>The world’s top companies demonstrate great interest in Ukrainian startup development. Google has bought Viewdle – a face-recognition app, Snapchat has purchased Looksery – a real-time face modification tool, and Oracle owns Maxymiser – a cloud-based software for marketers.</p>\n<p>Kyiv has become a rapidly-growing tech hub with investors than cities like Warsaw, Vienna, Oslo, and Copenhagen (7), including AVentures Capital, Chernovetsky Investment Group (CIG), Digital Future, Imperious Group, SMRK, TA Ventures, and Vostok Ventures.</p>\n<p><img src=\"/static/images/blog/screenshot_21.png\" alt=\"111\" title=\"1111\"></p>\n<p>Ukrainian IT professionals have developed loyal business relationships with clients from main European centers with venture capital funds like the UK, Germany, the Netherlands, etc. Consequently, venture capital investment in Ukrainian startups amounts to US$258 million in 2017 and US$336.9 million in 2018 and has been accelerating confidently.</p>\n<ol start=\"5\">\n<li>110+ international Research &#x26; Development centers</li>\n</ol>\n<p>Ukraine is considered to be one of the 50 most innovative global economies (5) and is the motherland to over 110 R&#x26;D centers for the world's biggest tech companies including Microsoft, Samsung Electronics, Apple, Skype, IBM, Boeing, Ericsson, Siemens, Oracle, Magento, and Wargaming, and those are only a part of the list. Most of them have become a part of the Ukrainian business community through M&#x26;As, partner R&#x26;Ds, or outstaffing companies.</p>\n<ol start=\"6\">\n<li>Boisterous tech community</li>\n</ol>\n<p>Agile Eastern Europe Conference, PyCon Ukraine, iForum, IT Arena, and DEV_Challenge are the greatest tech events among the variety all over the country. On such occasions, the chances to communicate with other professionals, share expertise, and follow the experiences of the most outstanding industry leaders are provided for Ukrainian IT representatives. The study published recently on developers.org.ua has shown that 60% of Ukrainian developers attend professional IT events on a regular basis.</p>\n<p>The 5 leading Ukrainian IT Communities are in Kyiv (25+ companies), Kharkiv (73 companies), Lviv, Dnipro (29 companies), and Odesa (18 companies).</p>\n<p>The greatest tech events draw over 7,000 visitors and international speakers from the world's leading companies like Skype, IBM, HP, SAP, Intel, and Dell, to name a few. In the regions and on a local level less significant conferences are organized, although their value should not be underestimated as they cover highly-discussed topics like AI, big data, virtual and augmented reality, data science, etc.</p>\n<ol start=\"7\">\n<li>80% of Ukrainian software developers know the English language</li>\n</ol>\n<p>80% of Ukraine’s tech professionals speak English on an intermediate or higher level (9). The greatest part of software development and IT outsourcing companies in Ukraine provide English tutorials for the teams to raise their English proficiency.</p>\n<ol start=\"8\">\n<li>Cultural adaptability and intractability</li>\n</ol>\n<p>Western businesses' work ethics are rather identical to the ones prevailing in the Ukrainian IT outsourcing industry. Developers in Ukraine are not merely service providers. They are willing to face challenges and unpredictable situations, take personal responsibility for their projects and take great effort to succeed at the highest level. 60% of Ukrainian developers dedicate additional time to the improvement of their skills: study educational materials, attend classes or IT conferences.</p>\n<p>This works in particular in the circumstances of direct communication, when no third-party is involved.</p>\n",
+    "dateFormatted": "August 3, 2021",
+    "date": "2021-08-03T13:07:03.919Z",
+    "title": "Another awesome post",
+    "main_img": "/static/images/blog/screenshot_16.png",
+    "category": [
+      "React",
+      "Healthcare"
+    ]
+  },
+  {
+    "body": "An increase in the Ukrainian tech ecosystem reaching $8.4B of industry export volume in 2025, a network of 200K IT representatives, and high-potential technical education have created conditions for the country to become one of the top European IT destinations. High-level technical professionalism, English language knowledge (70% upper-intermediate level), proficiency in developing industries (AI, Go, Big Data, etc.) have put Ukrainian developers 5th on the list of the world's top IT professionals.  \n\nCompanies like Apple, Microsoft, Samsung recruit Ukrainian developers to create innovative software products. \n\n## Motivation to hire Ukrainian IT outsourcing:\n\n1. \\#1 outsourcing market in Eastern Europe (Outsourcing Journal)  \n2. offshore location in 2017 (GSA) \n3. \\#1 in Central and Eastern Europe in outsourcing scope (CEEOA) \n4. one of the leading offshore destinations in Europe, the Middle East, and Africa (top 20- Gartner) \n5. one of the leading countries by the performance of outsourcing activities (top 50 - A.T. Kearney) \n6. one of the leading IT services exporters (top 25 - PwC) \n\n## Skype, IBM, Boeing, Ericsson, Siemens, and other tech global companies hire software developers in Ukraine because of:\n\n* 200,000+ IT industry representatives \n* 36,000+ graduate from technical higher educational institutions each year \n* 1500+ businesses in software development \n* 2,000+ startups with high potential \n* 110+ international Research & Development centers\n* boisterous tech community \n* 80% of Ukrainian software developers know the English language \n* cultural adaptability and intractability \n* value for money factor \n* favorable business climate \n* convenient time-zone for cooperation \n* 11 official holidays with paid time off\n\n1. **200,000+ IT industry representatives** \n\nRecently Ukrainian software development industry has been boosted by 2.5 times. The country's IT industry is estimated to rise to $10 billion in value by the end of 2020. In PWC prognosis Ukraine is the 5th in the Top 25 IT services exporters list. Ukrainian software development network has increased by 27% in 2017 and at the present moment provides employment to more than 200,000 IT professionals. \n\nLocal developers are rated 5th among the top software developers globally with a score index of 93,17%. In comparison to European countries, Ukrainian software developers occupy 4th place. (Skillvalue 2019 Report). \n\nUkrainian software developers are qualified in various technologies, with JavaScript (18,4%), Java (15,4%), C# (13,7%), Python (13,2%), and PHP (10,8%) as the most common programming languages in 2020 (2). \n\nLinkedin Research reported Ukraine to have 9K PHP Developers, 8K Java, and 8K JavaScript Developers, 3K Python Developers, 1K Ruby on Rails Software Developers. \n\nUkraine is positioned 1st in the world by the quantity of Unity3D game developers and C++ engineers, and 2nd among JavaScript, Scala, and Magento developers. \n\nUkraine ranks 3rd among Node.js, Python, ASP.NET, Ruby, Symfony, and PHP developers. \n\nAs for front-end web developers, Ukraine takes the 5th rank, and no deficiency of Android app developers and iOS developers is observed either (3). \n\n2. 36,000+ graduate from technical higher educational institutions each year \n\nThere are 402 universities and colleges in Ukraine (4).  In these higher educational institutions, more students graduate with science specialization annually than in some of the countries known for innovation development, like Japan, Sweden, Norway, Belgium, and the Netherlands (5). \n\nAnnually, there are over 36,000 graduates from local universities with degrees in fields aligned with IT. On top of that, the World Economic Forum recognized Ukraine among the leading 10 countries in the world by the quantity of engineering, manufacturing, and construction graduates, which amounts annually to 130,000 graduates. \n\nIn Ukraine, educational possibilities are provided to students, who are inclined to develop in hi-tech industries. Ukrainian software development companies and IT clusters offer educational programs at universities and organize innovation labs at higher educational institutions.  \n\nAs one of the examples, the Lviv IT Cluster has started educational programs in innovative subjects such as AI, Data Science, IoT, and Computer Science in cooperation with leading universities in Lviv.  \n\n3. 1500+ businesses in software development \n\nThe quantity of Ukrainian software development companies has increased from 1050 in 2011 to 1391 - 1650 software companies in 2020.  \n\nThe full range of software development services is provided, among them are web and mobile development, UI/UX design, QA & testing, dedicated team building, R&D, consulting, analytics, etc. \n\nIn reality, it is not that much about the numbers. Over 100 of Fortune 500 companies use the services of Ukrainian providers. 18 Ukrainian outsourcing companies are placed in the top 100 best outsourcing companies globally.\n\n![111](/static/images/blog/screenshot_4.png \"1111\")",
+    "img": "static/images/post-img.jpg",
+    "slug": "why-hire",
+    "preview_img": "/static/images/blog/screenshot_20.png",
+    "bodyHtml": "<p>An increase in the Ukrainian tech ecosystem reaching $8.4B of industry export volume in 2025, a network of 200K IT representatives, and high-potential technical education have created conditions for the country to become one of the top European IT destinations. High-level technical professionalism, English language knowledge (70% upper-intermediate level), proficiency in developing industries (AI, Go, Big Data, etc.) have put Ukrainian developers 5th on the list of the world's top IT professionals.</p>\n<p>Companies like Apple, Microsoft, Samsung recruit Ukrainian developers to create innovative software products.</p>\n<h2>Motivation to hire Ukrainian IT outsourcing:</h2>\n<ol>\n<li>#1 outsourcing market in Eastern Europe (Outsourcing Journal)</li>\n<li>offshore location in 2017 (GSA)</li>\n<li>#1 in Central and Eastern Europe in outsourcing scope (CEEOA)</li>\n<li>one of the leading offshore destinations in Europe, the Middle East, and Africa (top 20- Gartner)</li>\n<li>one of the leading countries by the performance of outsourcing activities (top 50 - A.T. Kearney)</li>\n<li>one of the leading IT services exporters (top 25 - PwC)</li>\n</ol>\n<h2>Skype, IBM, Boeing, Ericsson, Siemens, and other tech global companies hire software developers in Ukraine because of:</h2>\n<ul>\n<li>200,000+ IT industry representatives</li>\n<li>36,000+ graduate from technical higher educational institutions each year</li>\n<li>1500+ businesses in software development</li>\n<li>2,000+ startups with high potential</li>\n<li>110+ international Research &#x26; Development centers</li>\n<li>boisterous tech community</li>\n<li>80% of Ukrainian software developers know the English language</li>\n<li>cultural adaptability and intractability</li>\n<li>value for money factor</li>\n<li>favorable business climate</li>\n<li>convenient time-zone for cooperation</li>\n<li>11 official holidays with paid time off</li>\n</ul>\n<ol>\n<li><strong>200,000+ IT industry representatives</strong></li>\n</ol>\n<p>Recently Ukrainian software development industry has been boosted by 2.5 times. The country's IT industry is estimated to rise to $10 billion in value by the end of 2020. In PWC prognosis Ukraine is the 5th in the Top 25 IT services exporters list. Ukrainian software development network has increased by 27% in 2017 and at the present moment provides employment to more than 200,000 IT professionals.</p>\n<p>Local developers are rated 5th among the top software developers globally with a score index of 93,17%. In comparison to European countries, Ukrainian software developers occupy 4th place. (Skillvalue 2019 Report).</p>\n<p>Ukrainian software developers are qualified in various technologies, with JavaScript (18,4%), Java (15,4%), C# (13,7%), Python (13,2%), and PHP (10,8%) as the most common programming languages in 2020 (2).</p>\n<p>Linkedin Research reported Ukraine to have 9K PHP Developers, 8K Java, and 8K JavaScript Developers, 3K Python Developers, 1K Ruby on Rails Software Developers.</p>\n<p>Ukraine is positioned 1st in the world by the quantity of Unity3D game developers and C++ engineers, and 2nd among JavaScript, Scala, and Magento developers.</p>\n<p>Ukraine ranks 3rd among Node.js, Python, ASP.NET, Ruby, Symfony, and PHP developers.</p>\n<p>As for front-end web developers, Ukraine takes the 5th rank, and no deficiency of Android app developers and iOS developers is observed either (3).</p>\n<ol start=\"2\">\n<li>36,000+ graduate from technical higher educational institutions each year</li>\n</ol>\n<p>There are 402 universities and colleges in Ukraine (4).  In these higher educational institutions, more students graduate with science specialization annually than in some of the countries known for innovation development, like Japan, Sweden, Norway, Belgium, and the Netherlands (5).</p>\n<p>Annually, there are over 36,000 graduates from local universities with degrees in fields aligned with IT. On top of that, the World Economic Forum recognized Ukraine among the leading 10 countries in the world by the quantity of engineering, manufacturing, and construction graduates, which amounts annually to 130,000 graduates.</p>\n<p>In Ukraine, educational possibilities are provided to students, who are inclined to develop in hi-tech industries. Ukrainian software development companies and IT clusters offer educational programs at universities and organize innovation labs at higher educational institutions.</p>\n<p>As one of the examples, the Lviv IT Cluster has started educational programs in innovative subjects such as AI, Data Science, IoT, and Computer Science in cooperation with leading universities in Lviv.</p>\n<ol start=\"3\">\n<li>1500+ businesses in software development</li>\n</ol>\n<p>The quantity of Ukrainian software development companies has increased from 1050 in 2011 to 1391 - 1650 software companies in 2020.</p>\n<p>The full range of software development services is provided, among them are web and mobile development, UI/UX design, QA &#x26; testing, dedicated team building, R&#x26;D, consulting, analytics, etc.</p>\n<p>In reality, it is not that much about the numbers. Over 100 of Fortune 500 companies use the services of Ukrainian providers. 18 Ukrainian outsourcing companies are placed in the top 100 best outsourcing companies globally.</p>\n<p><img src=\"/static/images/blog/screenshot_4.png\" alt=\"111\" title=\"1111\"></p>\n",
+    "dateFormatted": "August 2, 2021",
+    "date": "2021-08-02T14:36:22.540Z",
+    "title": "Why Hire Ukrainian Software Developers for Outsourcing in IT?",
+    "main_img": "/static/images/blog/design-2.jpg",
+    "category": [
+      "JavaScript"
+    ]
+  },
+  {
+    "body": "Lorem Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfseSome text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse",
+    "img": "/static/images/blog-img.jpg",
+    "slug": "second-post",
+    "bodyHtml": "<p>Lorem Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse Some text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfseSome text asdas d ad asd asdasdasda sda zxcz xczsfzefe fsfsdfse</p>\n",
+    "dateFormatted": "October 18, 2020",
+    "date": "2020-10-18T01:45:39.821Z",
+    "title": "Second post",
+    "main_img": "/static/images/blog/design-2.jpg",
+    "category": [
+      "Ui/UX"
+    ]
+  }
+]

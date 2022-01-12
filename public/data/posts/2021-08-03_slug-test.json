@@ -1,0 +1,13 @@
+{
+  "category": [
+    "Outsource",
+    "Outstaff"
+  ],
+  "date": "2021-08-03T14:36:32.766Z",
+  "title": "Slug testing post",
+  "slug": "slug-test",
+  "main_img": "/static/images/blog/design-2.jpg",
+  "body": "123",
+  "bodyHtml": "<p>123</p>\n",
+  "dateFormatted": "August 3, 2021"
+}

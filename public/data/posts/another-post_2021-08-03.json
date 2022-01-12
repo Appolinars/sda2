@@ -1,0 +1,12 @@
+{
+  "category": [
+    "NextJS"
+  ],
+  "date": "2021-08-03T14:27:53.070Z",
+  "title": "Another post",
+  "slug": "another-post",
+  "main_img": "/static/images/blog/design-2.jpg",
+  "body": "Post content adskasdka adasda dasd asd",
+  "bodyHtml": "<p>Post content adskasdka adasda dasd asd</p>\n",
+  "dateFormatted": "August 3, 2021"
+}

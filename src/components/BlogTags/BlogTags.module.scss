@@ -1,0 +1,57 @@
+@import '@styles/variables';
+
+.tags {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px auto 20px;
+
+    &__item {
+        margin: 0 5px 5px 0;
+
+        input {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        label {
+            display: block;
+            padding: 5px;
+            font-size: 16px;
+            line-height: 19px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: box-shadow .4s, background-color .4s;
+
+            &:hover,
+            &:focus {
+                box-shadow: 0 0 4px 1px #333;
+            }
+        }
+
+        input:checked {
+
+            &+label {
+                color: $color-white;
+                background-color: #000;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .tags {
+        margin: 30px auto 20px;
+    }
+
+    .tags__item label {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2021-08-04T07:59:09.824Z",
+  "category": [
+    "Healthcare",
+    "Online Media",
+    "Fintech"
+  ],
+  "title": "Tagstags",
+  "slug": "tagstags",
+  "body": "Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets. Click the widget names in the sidebar to jump to specific widget details. We’re always adding new widgets, and you can also create your own!",
+  "main_img": "/static/images/blog/screenshot_15.png",
+  "bodyHtml": "<p>Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets. Click the widget names in the sidebar to jump to specific widget details. We’re always adding new widgets, and you can also create your own!</p>\n",
+  "dateFormatted": "August 4, 2021"
+}

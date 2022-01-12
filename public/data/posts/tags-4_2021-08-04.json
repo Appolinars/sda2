@@ -1,0 +1,15 @@
+{
+  "date": "2021-08-04T07:55:14.856Z",
+  "title": "tags4",
+  "slug": "tags-4",
+  "main_img": "/static/images/blog/screenshot_21.png",
+  "body": "config: a configuration object that will be passed directly to the media library being used - available options are determined by the library",
+  "category": [
+    "JavaScript",
+    "Laravel",
+    "PHP",
+    "Elementor"
+  ],
+  "bodyHtml": "<p>config: a configuration object that will be passed directly to the media library being used - available options are determined by the library</p>\n",
+  "dateFormatted": "August 4, 2021"
+}

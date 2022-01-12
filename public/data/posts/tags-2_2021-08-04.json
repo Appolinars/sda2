@@ -1,0 +1,14 @@
+{
+  "date": "2021-08-04T07:54:02.288Z",
+  "title": "Tags2",
+  "slug": "tags-2",
+  "main_img": "/static/images/blog/design-2.jpg",
+  "body": "Tags test",
+  "category": [
+    "Healthcare",
+    "Fintech",
+    "Outstaff"
+  ],
+  "bodyHtml": "<p>Tags test</p>\n",
+  "dateFormatted": "August 4, 2021"
+}

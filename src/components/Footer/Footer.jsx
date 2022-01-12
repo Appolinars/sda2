@@ -4,6 +4,7 @@ import FooterLines from "./FooterLines/FooterLines";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
+
   return (
     <footer className={styles.footer}>
       <div className={`${styles.footer__inner} container`}>
@@ -19,32 +20,74 @@ const Footer = () => {
         <div className={styles.footer__bottom}>
           <ul className={styles.footer__social}>
             <li className={styles.footer__social_item}>
-              <a href="#" className={styles.footer__social_link}>
+              <a
+                className={styles.footer__social_link}
+                href="https://t.me/ashub1n"
+                aria-label="Telegram"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                title="Contact us with Telegram"
+              >
                 Telegram
               </a>
             </li>
             <li className={styles.footer__social_item}>
-              <a href="#" className={styles.footer__social_link}>
+              <a
+                className={styles.footer__social_link}
+                href="https://api.whatsapp.com/send?phone=380990632890"
+                aria-label="WhatsApp"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                title="Contact us with WhatsApp"
+              >
                 WhatsApp
               </a>
             </li>
             <li className={styles.footer__social_item}>
-              <a href="#" className={styles.footer__social_link}>
-                Viber
+              <a
+                href="https://jobs.dou.ua/companies/sda/"
+                className={styles.footer__social_link}
+                aria-label="DOU"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                title="We are on DOU"
+              >
+                DOU
               </a>
             </li>
             <li className={styles.footer__social_item}>
-              <a href="#" className={styles.footer__social_link}>
+              <a
+                className={styles.footer__social_link}
+                href="https://www.linkedin.com/company/sda-company"
+                aria-label="Linkedin"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                title="We are on Linkedin"
+              >
                 LinkedIn
               </a>
             </li>
             <li className={styles.footer__social_item}>
-              <a href="#" className={styles.footer__social_link}>
+              <a
+                className={styles.footer__social_link}
+                href="https://www.upwork.com/ag/sdacompany/"
+                aria-label="UpWork"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                title="We are on Upwork"
+              >
                 UpWork
               </a>
             </li>
             <li className={styles.footer__social_item}>
-              <a href="#" className={styles.footer__social_link}>
+              <a
+                className={styles.footer__social_link}
+                href="https://www.xing.com/companies/sdacompany"
+                aria-label="Xing"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                title="We are on XING"
+              >
                 XING
               </a>
             </li>

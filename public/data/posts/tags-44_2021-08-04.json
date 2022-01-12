@@ -1,0 +1,15 @@
+{
+  "date": "2021-08-04T07:56:48.824Z",
+  "title": "tags44",
+  "slug": "tags-44",
+  "main_img": "/static/images/blog/design-2.jpg",
+  "body": "pattern: add field validation by specifying a list with a regex pattern and an error message; more extensive validation can be achieved with custom widgets",
+  "category": [
+    "React",
+    "NextJS",
+    "Express",
+    "MySQL"
+  ],
+  "bodyHtml": "<p>pattern: add field validation by specifying a list with a regex pattern and an error message; more extensive validation can be achieved with custom widgets</p>\n",
+  "dateFormatted": "August 4, 2021"
+}

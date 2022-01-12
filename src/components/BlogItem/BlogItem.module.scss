@@ -1,0 +1,132 @@
+@import '@styles/variables';
+
+.item {
+
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(27.03deg, rgba(0, 0, 0, 0.9) 35.67%, rgba(0, 0, 0, 0) 127.88%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    color: $color-white;
+    font-weight: 400;
+
+    &_height {
+        min-height: 650px;
+    }
+
+    &_width {
+        width: calc(33.333% - 50px);
+        margin: 0 25px 50px;
+        height: auto;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &__date {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 25px;
+    }
+
+    &__text {
+        margin-top: 10px;
+        font-size: 22px;
+        line-height: 25px;
+
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+
+    &__tag {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 16px;
+        line-height: 19px;
+        border: 1px solid $color-white;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 50px;
+        box-shadow: 0 0 3px 1px transparent;
+        transition: transform .4s, box-shadow .4s;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 3px 1px $color-white;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .item_width {
+        min-height: auto;
+        width: calc(33.333% - 30px);
+        margin: 0 15px 30px;
+    }
+
+    .item__title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .item_width {
+        width: calc(50% - 30px);
+    }
+
+    .item__title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .item__text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .item_width {
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .item_width {
+        width: 100%;
+    }
+}

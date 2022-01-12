@@ -30,3 +30,17 @@ export const useOnScreen = (ref) => {
 
   return isOnScreen;
 };
+
+export const useCloseOnDomClick = (targetRef, isActive, setIsActive) => {
+  useEffect(() => {
+    const onDomClick = (e) => {
+      if (targetRef.current) {
+        if (isActive && !targetRef.current.contains(e.target)) {
+          setIsActive(false);
+        }
+      }
+    };
+    document.addEventListener("click", onDomClick);
+    return () => document.removeEventListener("click", onDomClick);
+  }, [isActive]);
+};

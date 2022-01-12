@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/static/images
+public_folder: static/images
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    label_singular: "Post"
+    folder: "public/data/posts"
+    media_folder: '/{{media_folder}}/blog'
+    public_folder: '/{{public_folder}}/blog'
+    create: true
+    identifier_field: "title"
+    slug: "{{fields.slug}}_{{year}}-{{month}}-{{day}}"
+    format: "json"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          pattern: ["^[a-zA-Z0-9-_]+$", "Alphanumeric with dashes or underscrores"],
+          hint: "Post's route(URL) (do not include folder or file extension)"
+        }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Preview image",
+          name: "preview_img",
+          widget: "image",
+          required: false,
+          hint: "Will be shown on blog page in the list of posts. Size should be square or similar (aspect ratio - 4:3)"
+        }
+      - {
+          label: "Main image (aspect ratio - 16:9)",
+          name: "main_img",
+          widget: "image",
+        }
+      - { label: "Body", name: "body", widget: "markdown", hint: "Do not start with title. Title will be taken form title-field and placed on the top of article." }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["JavaScript", "React", "VueJS", "NextJS", "Node.JS", "Express", "MySQL", "PostgreSQL", "Mongo", "Firebase", "PHP", "Yii", "Laravel", "WordPress", "HTML", "MVP", "APP", "APPIntegration", "Elementor", "ACF", "Ui/UX", "Webdesign", "Outsource", "Outstaff", "Fullstack", "Frontend", "Backend", "Figma", "Github", "Fintech", "Online Media", "Healthcare"],
+          multiple: true,
+          min: 1,
+          max: 4
+        }

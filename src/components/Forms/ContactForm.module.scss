@@ -56,6 +56,18 @@
         }
     }
 
+    &__file {
+        position: relative;
+
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            pointer-events: none;
+            width: 1px;
+        }
+    }
+
     &__btn {
         width: 100%;
     }

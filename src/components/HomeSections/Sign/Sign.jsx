@@ -66,6 +66,7 @@ const Sign = () => {
                 placeholder="Your email address"
                 extraClass={styles.sign__input}
                 inputError={emailError}
+                name="email"
               />
               <button className={`${styles.sign__btn} btn`}>Sign up</button>
             </form>

@@ -1,6 +1,6 @@
 import styles from "./Input.module.scss";
 
-const Input = ({ value, onChange, extraClass, type = "text", placeholder, inputError }) => {
+const Input = ({ value, onChange, extraClass, type = "text", placeholder, name, inputError }) => {
   return (
     <div
       className={extraClass ? `${extraClass} ${styles.input_wrapper}` : `${styles.input_wrapper}`}
@@ -11,6 +11,7 @@ const Input = ({ value, onChange, extraClass, type = "text", placeholder, inputE
         type={type}
         className={inputError ? `${styles.input} ${styles.error}` : `${styles.input}`}
         placeholder={placeholder}
+        name={name}
       />
       <span className={styles.input_border}></span>
     </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import { encodeFormData } from "src/utils/helpers";
 
 import Input from "@components/Input/Input";
 import Notification from "@components/Notification/Notification";

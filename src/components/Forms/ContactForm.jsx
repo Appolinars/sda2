@@ -46,7 +46,7 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "multipart/form-data" },
-      body: encodeFormData({ "form-name": "Sign_form", ...formData }),
+      body: encodeFormData({ "form-name": "Contact_form", ...formData }),
     })
       .then(() => {
         setFormData({

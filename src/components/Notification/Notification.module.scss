@@ -1,0 +1,123 @@
+.notification {
+    width: 100%;
+    max-width: 390px;
+    padding: 20px;
+    border-radius: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    overflow: hidden;
+
+    &__close {
+        position: absolute;
+        top: 7px;
+        right: 5px;
+        background: none;
+        border: none;
+        transition: transform .4s;
+        will-change: transform;
+
+        svg {
+            width: 15px;
+            height: 15px;
+            transition: transform .4s;
+        }
+
+        path {
+            fill-opacity: 1;
+        }
+
+        &:hover svg {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    &__line {
+        display: inline-block;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        animation: animateLine 4.8s linear;
+    }
+}
+
+@keyframes animateLine {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+.notification_success {
+    // background-color: rgb(39, 233, 21);
+    // color: #000;
+    background-color: #000;
+    color: #fff;
+
+    .notification__icon {
+        vertical-align: text-bottom;
+        margin-right: 5px;
+    }
+
+    .notification__close path {
+        fill: #fff;
+    }
+
+    .notification__line {
+        background-color: #fff;
+    }
+}
+
+.notification_error {
+    background-color: #e90b0b;
+    color: #fff;
+
+    .notification__close path {
+        fill: #fff;
+    }
+}
+
+.notification_info {
+    background-color: #334aeb;
+    color: #fff;
+
+    .notification__close path {
+        fill: #fff;
+    }
+}
+
+@keyframes notificationIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes notificationOut {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+}

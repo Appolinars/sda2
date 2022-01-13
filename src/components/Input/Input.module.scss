@@ -20,6 +20,10 @@
     position: relative;
     transition: border-color .5s, box-shadow .4s;
 
+    &.error {
+        border-color: red;
+    }
+
     &::placeholder {
         color: $color-grey;
         transition: color .4s;

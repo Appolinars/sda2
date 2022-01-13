@@ -1,6 +1,5 @@
-import { SuccessIcon } from "@components/SVGIcons/SVGIcons";
 import { memo, useEffect, useState } from "react";
-import { CancelIcon } from "../SVGIcons/SVGIcons";
+import { SuccessIcon, CancelIcon } from "@components/SVGIcons/SVGIcons";
 import styles from "./Notification.module.scss";
 
 const Notification = memo(({ active, setActive, children, success, error, info, hasCloseBtn }) => {
@@ -23,11 +22,6 @@ const Notification = memo(({ active, setActive, children, success, error, info, 
   return (
     render && (
       <div
-        className={
-          (success && "notification notification_success") ||
-          (error && "notification notification_error") ||
-          (info && "notification notification_info")
-        }
         className={
           (success && `${styles.notification} ${styles.notification_success}`) ||
           (error && `${styles.notification} ${styles.notification_error}`) ||
@@ -52,5 +46,7 @@ const Notification = memo(({ active, setActive, children, success, error, info, 
     )
   );
 });
+
+Notification.displayName = "Notification";
 
 export default Notification;

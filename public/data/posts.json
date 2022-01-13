@@ -1,5 +1,18 @@
 [
   {
+    "date": "2022-01-12T16:29:18.631Z",
+    "title": "Update test",
+    "slug": "update-test",
+    "preview_img": "/static/images/blog/screenshot_70.png",
+    "main_img": "/static/images/blog/screenshot_62.png",
+    "body": "AWD awdAW da wdaw dawd awdaw dawd\n\n* Use `next start` to run a server, which includes the Image Optimization API.\n\n  * Use any provider which supports Image Optimization (like Vercel).\n  * Configure a third-party loader in `next.config.js`.\n  * Use the `loader` prop for `next/image`.\n\n## AWd DAWd awd awdaw dawd aw\n\n![123](/static/images/blog/screenshot_24.png \"123123123 123123123\")\n\n### adwdawd\n\nawd awdAWD AWD AWDAW dAWD awDWad",
+    "category": [
+      "JavaScript"
+    ],
+    "bodyHtml": "<p>AWD awdAW da wdaw dawd awdaw dawd</p>\n<ul>\n<li>\n<p>Use <code>next start</code> to run a server, which includes the Image Optimization API.</p>\n<ul>\n<li>Use any provider which supports Image Optimization (like Vercel).</li>\n<li>Configure a third-party loader in <code>next.config.js</code>.</li>\n<li>Use the <code>loader</code> prop for <code>next/image</code>.</li>\n</ul>\n</li>\n</ul>\n<h2>AWd DAWd awd awdaw dawd aw</h2>\n<p><img src=\"/static/images/blog/screenshot_24.png\" alt=\"123\" title=\"123123123 123123123\"></p>\n<h3>adwdawd</h3>\n<p>awd awdAWD AWD AWDAW dAWD awDWad</p>\n",
+    "dateFormatted": "January 12, 2022"
+  },
+  {
     "date": "2022-01-12T14:46:49.694Z",
     "title": "V2 Test post",
     "slug": "v2-test",

@@ -22,6 +22,14 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
 
   const { setSubmitSuccess, setSubmitError } = useContext(FormsContext);
 
+  const encode = (data) => {
+    const encodedFormData = new FormData();
+    Object.keys(data).forEach((k) => {
+      encodedFormData.append(k, data[k]);
+    });
+    return encodedFormData;
+  };
+
   const handleChangeInput = (e) => {
     if (e.target.name === "email") {
       setEmailError(false);
@@ -42,42 +50,42 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
       return setEmailError(true);
     }
 
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "multipart/form-data" },
-    //   body: new FormData(e.target),
-    //   // body: encodeFormData({ "form-name": "Contact form", ...formData }),
-    // })
-    //   .then(() => {
-    //     setFormData({
-    //       name: "",
-    //       email: "",
-    //       phone: "",
-    //       message: "",
-    //       getNDA: false,
-    //       file: null,
-    //     });
-    //     setIsModalOpen && setIsModalOpen(false);
-    //     setSubmitSuccess(true);
-    //   })
-    //   .catch((error) => {
-    //     setIsModalOpen && setIsModalOpen(false);
-    //     setSubmitError(true);
-    //     console.log(error);
-    //   });
+    const data = { "form-name": "Contact form", ...formData, string };
+
+    fetch("/", {
+      method: "POST",
+      // headers: { "Content-Type": "multipart/form-data" },
+      body: encode(data),
+    })
+      .then(() => {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+          getNDA: false,
+          file: null,
+        });
+        setIsModalOpen && setIsModalOpen(false);
+        setSubmitSuccess(true);
+      })
+      .catch((error) => {
+        setIsModalOpen && setIsModalOpen(false);
+        setSubmitError(true);
+        console.log(error);
+      });
   };
 
   return (
     <>
       <form
         className={extraClass ? `${extraClass} ${styles.form}` : `${styles.form}`}
-        action="POST"
         name="Contact form"
-        // method="POST"
+        method="POST"
         id="Contact_form"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        // onSubmit={handleAjaxSubmit}
+        onSubmit={handleAjaxSubmit}
       >
         <input type="hidden" name="form-name" value="Contact form" />
         <Input

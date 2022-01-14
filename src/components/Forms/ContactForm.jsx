@@ -77,7 +77,7 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
         id="Contact_form"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        onSubmit={handleAjaxSubmit}
+        // onSubmit={handleAjaxSubmit}
       >
         <input type="hidden" name="form-name" value="Contact form" />
         <Input

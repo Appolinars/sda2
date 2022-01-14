@@ -38,47 +38,48 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
 
   const handleAjaxSubmit = (e) => {
     e.preventDefault();
-
     if (!formData.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
       return setEmailError(true);
     }
 
-    fetch("/", {
-      method: "POST",
-      // headers: { "Content-Type": "multipart/form-data" },
-      body: encodeFormData({ "form-name": "Contact_form", ...formData }),
-    })
-      .then(() => {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-          getNDA: false,
-          file: null,
-        });
-        setIsModalOpen && setIsModalOpen(false);
-        setSubmitSuccess(true);
-      })
-      .catch((error) => {
-        setIsModalOpen && setIsModalOpen(false);
-        setSubmitError(true);
-        console.log(error);
-      });
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "multipart/form-data" },
+    //   body: new FormData(e.target),
+    //   // body: encodeFormData({ "form-name": "Contact form", ...formData }),
+    // })
+    //   .then(() => {
+    //     setFormData({
+    //       name: "",
+    //       email: "",
+    //       phone: "",
+    //       message: "",
+    //       getNDA: false,
+    //       file: null,
+    //     });
+    //     setIsModalOpen && setIsModalOpen(false);
+    //     setSubmitSuccess(true);
+    //   })
+    //   .catch((error) => {
+    //     setIsModalOpen && setIsModalOpen(false);
+    //     setSubmitError(true);
+    //     console.log(error);
+    //   });
   };
 
   return (
     <>
       <form
         className={extraClass ? `${extraClass} ${styles.form}` : `${styles.form}`}
-        name="Contact_form"
-        method="POST"
+        action="POST"
+        name="Contact form"
+        // method="POST"
         id="Contact_form"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleAjaxSubmit}
       >
-        <input type="hidden" name="form-name" value="Contact_form" />
+        <input type="hidden" name="form-name" value="Contact form" />
         <Input
           value={formData.name}
           onChange={handleChangeInput}

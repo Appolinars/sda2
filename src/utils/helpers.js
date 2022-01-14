@@ -1,7 +1,9 @@
 export const encodeFormData = (data) => {
-  const FormData = new FormData();
+  const convertedData = new FormData();
   Object.keys(data).forEach((value) => {
-    FormData.append(value, data[value]);
+    if (value) {
+      convertedData.append(value, data[value]);
+    }
   });
-  return FormData;
+  return convertedData;
 };

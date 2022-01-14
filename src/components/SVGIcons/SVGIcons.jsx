@@ -267,3 +267,21 @@ export const SuccessIcon = ({iconClass}) => {
     </svg>
   );
 };
+
+export const FileUploadedIcon = ({iconClass}) => {
+  return (
+    <svg
+      className={iconClass}
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 48 48"
+    >
+      <g fill="none" stroke="#000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M10 44h28a2 2 0 0 0 2-2V14L31 4H10a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2z" />
+        <path d="M17 29l6 5l9-11M30 4v10h10" />
+      </g>
+    </svg>
+  );
+};

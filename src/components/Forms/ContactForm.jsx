@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 import { encodeFormData } from "src/utils/helpers";
-
 import { FormsContext } from "@components/Layout/Layout";
+
 import Input from "@components/Input/Input";
-import { PinIcon } from "@components/SVGIcons/SVGIcons";
-import Notification from "@components/Notification/Notification";
+import Loader from "@components/Loader/Loader";
+import { PinIcon, FileUploadedIcon } from "@components/SVGIcons/SVGIcons";
 import styles from "./ContactForm.module.scss";
 
 const ContactForm = ({ extraClass, setIsModalOpen }) => {
@@ -17,18 +17,8 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
     file: null,
   });
   const [emailError, setEmailError] = useState(false);
-  // const [success, setSuccess] = useState(false);
-  // const [submitError, setSubmitError] = useState(true);
-
+  const [isLoading, setIsLoading] = useState(false);
   const { setSubmitSuccess, setSubmitError } = useContext(FormsContext);
-
-  const encode = (data) => {
-    const encodedFormData = new FormData();
-    Object.keys(data).forEach((k) => {
-      encodedFormData.append(k, data[k]);
-    });
-    return encodedFormData;
-  };
 
   const handleChangeInput = (e) => {
     if (e.target.name === "email") {
@@ -49,11 +39,11 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
     if (!formData.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
       return setEmailError(true);
     }
+    setIsLoading(true);
 
     fetch("/", {
       method: "POST",
-      // headers: { "Content-Type": "multipart/form-data" },
-      body: encode({ "form-name": "Contact form", ...formData }),
+      body: encodeFormData({ "form-name": "Contact form", ...formData }),
     })
       .then(() => {
         setFormData({
@@ -64,6 +54,7 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
           getNDA: false,
           file: null,
         });
+        setIsLoading(false);
         setIsModalOpen && setIsModalOpen(false);
         setSubmitSuccess(true);
       })
@@ -135,16 +126,13 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
               Attach files <PinIcon />
               <input type="file" name="file" onChange={handleChangeInput} />
             </label>
+            {formData.file && <FileUploadedIcon iconClass={styles.form__file_uploaded} />}
           </div>
         </div>
-        <button className={`${styles.form__btn} btn`}>Send message</button>
+        <button className={`${styles.form__btn} btn`}>
+          Send message {isLoading && <Loader color="#fff" className={styles.form__loader} />}
+        </button>
       </form>
-      {/* <Notification active={success} setActive={setSuccess} success hasCloseBtn>
-        Form is successfully submited
-      </Notification>
-      <Notification active={submitError} setActive={setSubmitError} error hasCloseBtn>
-        Something went wrong. Please try again later.
-      </Notification> */}
     </>
   );
 };

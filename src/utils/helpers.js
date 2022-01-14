@@ -1,5 +1,9 @@
 export const encodeFormData = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+  const FormData = new FormData();
+  Object.keys(data).forEach((value) => {
+    if (value) {
+      FormData.append(value, data[value]);
+    }
+  });
+  return FormData;
 };

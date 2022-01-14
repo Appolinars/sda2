@@ -68,7 +68,37 @@
         }
     }
 
+    &__file_uploaded {
+        position: absolute;
+        right: 0;
+        bottom: -25px;
+        will-change: transform;
+        animation: animateUploaded .4s;
+        g {
+            stroke: #15b915;
+        }
+    }
+
+    @keyframes animateUploaded {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
     &__btn {
         width: 100%;
+        position: relative;
     }
+
+    &__loader {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    
 }

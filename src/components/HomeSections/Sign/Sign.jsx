@@ -22,7 +22,7 @@ const Sign = () => {
 
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encodeFormData({ "form-name": "Sign_form", email }),
     })
       .then(() => {

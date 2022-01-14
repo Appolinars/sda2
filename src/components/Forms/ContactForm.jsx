@@ -50,12 +50,10 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
       return setEmailError(true);
     }
 
-    const data = { "form-name": "Contact form", ...formData, string };
-
     fetch("/", {
       method: "POST",
       // headers: { "Content-Type": "multipart/form-data" },
-      body: encode(data),
+      body: encode({ "form-name": "Contact form", ...formData }),
     })
       .then(() => {
         setFormData({

@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from 'next/script';
 
 import { ldJson } from "public/ldjson";
 
@@ -39,9 +38,6 @@ class MyDocument extends Document {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
           />
-
-          <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
-          <Script src="/netlifyIdentity.js"></Script>
         </Head>
         <body>
           <Main />

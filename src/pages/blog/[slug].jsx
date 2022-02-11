@@ -5,12 +5,12 @@ import { FreeMode } from "swiper";
 import posts from "@data/posts.json";
 
 import Layout from "@components/Layout/Layout";
+import BlogItem from '@components/BlogItem/BlogItem';
 import { ArrowLeft } from '@components/SVGIcons/SVGIcons';
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import styles from './Blog.module.scss'
-import BlogItem from '@components/BlogItem/BlogItem';
 
 const Post = ({ post, posts = [] }) => {
   return (
@@ -39,7 +39,7 @@ const Post = ({ post, posts = [] }) => {
         <div className={styles.post__content} dangerouslySetInnerHTML={{ __html: post.bodyHtml }} />
       </article>
 
-      {posts.length !== 0 && (
+      {posts.length > 6 && (
         <Swiper
           className={styles.post__slider}
           modules={[FreeMode]}

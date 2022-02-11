@@ -13,7 +13,7 @@ const ErrorPage = () => {
           muted
         ></video>
         <div className={styles.error__inner}>
-          <h1 className="heading__title">Hm... Looks like there’s nothing here.</h1>
+          <h1 className="heading__title">Hm... Looks like there's nothing here.</h1>
           <p className="heading__subtitle">
             Error 404: this page was moved, renamed or simply does not exist.
           </p>

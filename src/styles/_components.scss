@@ -53,14 +53,65 @@
 }
 
 .section-padding {
-    padding: 130px 0 100px;
+	padding: 130px 0 100px;
+
+	&.decor-line-btn {
+		padding: 0 0 30px;
+
+		@media (min-width: 1402px) {
+			padding: 130px 0 100px;
+		}
+	}
+
+	&.about {
+		position: relative;
+	}
+
+	&.wthtVideo {
+		padding: 130px 0 150px;
+	}
+
+	&.solutionfeatures {
+		padding: 50px 0 110px;
+	}
+}
+
+.parent {
+	position: relative;
 }
 
 .heading {
+
+    &__suptitle {
+        font-size: 24px;
+		line-height: 28px;
+		margin: 0 0 20px;
+    }
+
     &__title {
         font-weight: 600;
         font-size: 72px;
         line-height: 1;
+
+        &.decor-line {
+			display: inline-block;
+            position: relative;
+			padding: 0 0 30px;
+			
+			@media (min-width: 768px) {
+				padding: 0 0 50px;
+			}
+
+            &::after {
+                content: '';
+                width: 45%;
+                height: 2px;
+                background-color: $color-grey;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
     }
 
     &__subtitle {

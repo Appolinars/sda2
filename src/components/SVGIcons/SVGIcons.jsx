@@ -54,6 +54,25 @@ export const ArrowDown = ({ iconClass }) => {
   );
 };
 
+export const ArrowRight = ({ iconClass }) => {
+	return (
+		<svg 
+			className={iconClass}
+			width="16" 
+			height="16" 
+			viewBox="0 0 16 16" 
+			fill="none" 
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path 
+				d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" 
+				fill="black"
+			/>
+		</svg>
+
+	)
+}
+
 export const ScrollIcon = ({ iconClass }) => {
   return (
     <svg
@@ -282,6 +301,24 @@ export const FileUploadedIcon = ({iconClass}) => {
         <path d="M10 44h28a2 2 0 0 0 2-2V14L31 4H10a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2z" />
         <path d="M17 29l6 5l9-11M30 4v10h10" />
       </g>
+    </svg>
+  );
+};
+
+export const OpenIcon = ({iconClass}) => {
+  return (
+    <svg
+      className={iconClass}
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16 16H2V2H9V0H2C0.89 0 0 0.9 0 2V16C0 17.1 0.89 18 2 18H16C17.1 18 18 17.1 18 16V9H16V16ZM11 0V2H14.59L4.76 11.83L6.17 13.24L16 3.41V7H18V0H11Z"
+        fill="black"
+      />
     </svg>
   );
 };

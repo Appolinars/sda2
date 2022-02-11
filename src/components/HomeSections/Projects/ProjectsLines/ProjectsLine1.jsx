@@ -4,17 +4,6 @@ import { useOnScreen } from "src/utils/hooks";
 import styles from "./ProjectsLines.module.scss";
 
 const ProjectsLine1 = () => {
-  const line_1 = useRef(null);
-  const path_1 = useRef(null);
-  const pathAnimate_1 = useRef(null);
-  const isLine1OnScreen = useOnScreen(line_1);
-
-  useEffect(() => {
-    if (isLine1OnScreen && pathAnimate_1.current) {
-      pathAnimate_1.current.beginElement();
-    }
-  }, [isLine1OnScreen]);
-
   // Middle
 
   const line_md_1 = useRef(null);
@@ -54,45 +43,6 @@ const ProjectsLine1 = () => {
 
   return (
     <>
-      <svg
-        width="951"
-        height="716"
-        viewBox="0 0 951 716"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={styles.line_1}
-        ref={line_1}
-      >
-        <rect
-          x="14.1422"
-          y="7.0708"
-          width="10"
-          height="10"
-          transform="rotate(135 14.1422 7.0708)"
-          fill="#899198"
-        />
-        <path
-          d="M7.00034 6.99953V6.99953C7.00033 62.057 51.6333 106.69 106.691 106.69L800 106.69C882.843 106.69 950 173.847 950 256.69L950 564.999C950 647.842 882.843 715 800 715L562.439 714.999"
-          stroke="#899198"
-          strokeWidth="2"
-          strokeDasharray={path_1.current && path_1.current.getTotalLength()}
-          strokeDashoffset={path_1.current && path_1.current.getTotalLength()}
-          ref={path_1}
-        >
-          <animate
-            ref={pathAnimate_1}
-            attributeName="stroke-dashoffset"
-            begin="indefinite"
-            from={`${path_1.current && path_1.current.getTotalLength()}`}
-            to="0"
-            dur="3s"
-            repeatCount="1"
-            fill="freeze"
-            calcMode="linear"
-          />
-        </path>
-      </svg>
-
       <svg
         width="336"
         height="306"

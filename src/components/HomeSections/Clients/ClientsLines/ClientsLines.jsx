@@ -19,6 +19,11 @@ const ClientsLines = () => {
   const pathAnimate_3 = useRef(null);
   const isLine3OnScreen = useOnScreen(line_3);
 
+  const line_1_add = useRef(null);
+  const path_1_add = useRef(null);
+  const pathAnimate_1_add = useRef(null);
+  const isLine1OnScreen_add = useOnScreen(line_1_add);
+
   useEffect(() => {
     if (isLine1OnScreen && pathAnimate_1.current) {
       pathAnimate_1.current.beginElement();
@@ -185,6 +190,7 @@ const ClientsLines = () => {
             repeatCount="1"
             fill="freeze"
             calcMode="linear"
+            id="line_clients"
           />
         </path>
       </svg>
@@ -266,6 +272,7 @@ const ClientsLines = () => {
             repeatCount="1"
             fill="freeze"
             calcMode="linear"
+            id="line_md3"
           />
         </path>
         <rect
@@ -305,6 +312,7 @@ const ClientsLines = () => {
             repeatCount="1"
             fill="freeze"
             calcMode="linear"
+            id="clients_sm_2"
           />
         </path>
         <rect
@@ -323,6 +331,47 @@ const ClientsLines = () => {
           transform="rotate(135 158.142 76.071)"
           fill="#899198"
         />
+      </svg>
+
+      <svg
+        width="951"
+        height="716"
+        viewBox="0 0 951 716"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={
+          isLine1OnScreen_add ? `${styles.line_1_add} ${styles.active}` : `${styles.line_1_add}`
+        }
+        ref={line_1_add}
+      >
+        <rect
+          x="14.1422"
+          y="7.0708"
+          width="10"
+          height="10"
+          transform="rotate(135 14.1422 7.0708)"
+          fill="#899198"
+        />
+        <path
+          d="M7.00034 6.99953V6.99953C7.00033 62.057 51.6333 106.69 106.691 106.69L800 106.69C882.843 106.69 950 173.847 950 256.69L950 564.999C950 647.842 882.843 715 800 715L562.439 714.999"
+          stroke="#899198"
+          strokeWidth="2"
+          strokeDasharray={path_1_add.current && path_1_add.current.getTotalLength()}
+          strokeDashoffset={path_1_add.current && path_1_add.current.getTotalLength()}
+          ref={path_1_add}
+        >
+          <animate
+            ref={pathAnimate_1_add}
+            attributeName="stroke-dashoffset"
+            begin="line_clients.end"
+            from={`${path_1_add.current && path_1_add.current.getTotalLength()}`}
+            to="0"
+            dur="3s"
+            repeatCount="1"
+            fill="freeze"
+            calcMode="linear"
+          />
+        </path>
       </svg>
     </>
   );

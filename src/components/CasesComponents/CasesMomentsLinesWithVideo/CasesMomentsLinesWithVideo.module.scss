@@ -1,0 +1,51 @@
+.line_1 {
+	display: none;
+	
+
+	@media (min-width: 1200px) {
+		display: block;
+		position: absolute;
+		top: -137px;
+		left: 25%;
+		z-index: -1;
+		
+	}
+
+	rect {
+        opacity: 0;
+        transition: opacity .3s 2s;
+    }
+
+    &.active {
+        rect {
+            opacity: 1;
+        }
+    }
+}
+
+.line_2 {
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: block;
+		position: absolute;
+		top: 180px;
+		left: 25%;
+	}
+
+	@media (min-width: 1378px) {
+		top: 8%;
+	}
+
+
+	rect {
+        opacity: 0;
+        transition: opacity .3s .5s;
+    }
+
+    &.active {
+        rect {
+            opacity: 1;
+        }
+    }
+}

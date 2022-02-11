@@ -1,0 +1,56 @@
+@import '@styles/variables';
+
+.line_1 {
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: block;
+		position: absolute;
+		left: 10%;
+		top: -130px;
+	}
+
+	@media (min-width: 1400px) {
+		left: 23%;
+	}
+
+    rect {
+        opacity: 0;
+        transition: opacity .4s 2.5s;
+    }
+
+    &.active {
+        rect {
+            opacity: 1;
+        }
+    }
+}
+
+
+.line_2 {
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: block;
+		position: absolute;
+		left: 10%;
+		top: calc(100% + 100px);
+		transform: translateY(-100%);	
+	}
+
+	@media (min-width: 1400px) {
+		left: 23%;
+	}
+
+
+	rect {
+        opacity: 0;
+        transition: opacity .4s .5s;
+    }
+
+    &.active {
+        rect {
+            opacity: 1;
+        }
+    }
+}

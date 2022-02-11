@@ -30,3 +30,23 @@
         }
     }
 }
+
+.form {
+
+    &__input {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        width: 100%;
+        position: relative;
+    }
+
+    &__loader {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

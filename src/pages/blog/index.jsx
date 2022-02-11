@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Script from "next/script";
+// import Script from "next/script";
 
 import posts from "@data/posts.json";
 
@@ -62,8 +62,8 @@ const Blog = ({ posts = [] }) => {
           )}
         </div>
       </section>
-      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
-      <Script src="/netlifyIdentity.js"></Script>
+      {/* <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
+      <Script src="/netlifyIdentity.js"></Script> */}
     </>
   );
 };

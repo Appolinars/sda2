@@ -54,14 +54,15 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
           getNDA: false,
           file: null,
         });
-        setIsLoading(false);
-        setIsModalOpen && setIsModalOpen(false);
         setSubmitSuccess(true);
       })
       .catch((error) => {
-        setIsModalOpen && setIsModalOpen(false);
         setSubmitError(true);
         console.log(error);
+      })
+      .finally(() => {
+        setIsModalOpen && setIsModalOpen(false);
+        setIsLoading(false);
       });
   };
 

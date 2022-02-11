@@ -21,7 +21,7 @@ collections:
           name: "slug",
           widget: "string",
           pattern: ["^[a-zA-Z0-9-_]+$", "Alphanumeric with dashes or underscrores"],
-          hint: "Post's route(URL) (do not include folder or file extension)"
+          hint: "Article's route(URL). For example - 'my_new_post'"
         }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - {
@@ -29,12 +29,12 @@ collections:
           name: "preview_img",
           widget: "image",
           required: false,
-          hint: "Will be shown on blog page in the list of posts. Size should be square or similar (aspect ratio - 4:3)"
+          hint: "Will be shown on blog page in the list of posts. If preview isn't uploaded then main image will be used (check how it displays on blog page, because preview image and main image have different aspect ratio)."
         }
       - {
-          label: "Main image (aspect ratio - 16:9)",
+          label: "Main image",
           name: "main_img",
-          widget: "image",
+          widget: "image"
         }
       - { label: "Body", name: "body", widget: "markdown", hint: "Do not start with title. Title will be taken form title-field and placed on the top of article." }
       - {

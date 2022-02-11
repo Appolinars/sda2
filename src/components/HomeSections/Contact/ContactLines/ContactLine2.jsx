@@ -3,7 +3,7 @@ import { useOnScreen } from "src/utils/hooks";
 
 import styles from "./ContactLines.module.scss";
 
-const ContactLine1 = () => {
+const ContactLine2 = () => {
   const line_2 = useRef(null);
   const path_2 = useRef(null);
   const pathAnimate_2 = useRef(null);
@@ -52,4 +52,4 @@ const ContactLine1 = () => {
   );
 };
 
-export default ContactLine1;
+export default ContactLine2;

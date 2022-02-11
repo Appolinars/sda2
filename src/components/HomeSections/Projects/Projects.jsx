@@ -4,14 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Fade } from "react-awesome-reveal";
 
 import livunityImg from "@images/projects-livunity.jpg";
-import nubodImg from "@images/projects-nubod.png";
+import medappImg from "@images/projects-medapp.jpg";
+import nubodImg from "@images/projects-nubod.jpg";
 
 import "swiper/css";
 import styles from "./Projects.module.scss";
 import ProjectsLine1 from "./ProjectsLines/ProjectsLine1";
 import ProjectsLine2 from "./ProjectsLines/ProjectsLine2";
 import ProjectsLine3 from "./ProjectsLines/ProjectsLine3";
-import ProjectsLine4 from './ProjectsLines/ProjectsLine4';
+import ProjectsLine4 from "./ProjectsLines/ProjectsLine4";
 
 const Projects = () => {
   return (
@@ -33,7 +34,7 @@ const Projects = () => {
               <h3 className={styles.projects__title}>LivUnity</h3>
             </Fade>
             <div className={styles.projects__content}>
-              <Link href="/">
+              <Link href="/cases/livunity">
                 <a className={styles.projects__link}>
                   <Image className={styles.projects__link_img} src={livunityImg} alt="LivUnity" />
                 </a>
@@ -45,12 +46,12 @@ const Projects = () => {
           </li>
           <li className={`${styles.projects__item} ${styles.projects__item_reverse}`}>
             <Fade direction="up" duration={1200} triggerOnce>
-              <h3 className={styles.projects__title}>Casename</h3>
+              <h3 className={styles.projects__title}>Medapp</h3>
             </Fade>
             <div className={styles.projects__content}>
-              <Link href="/">
+              <Link href="/cases/medapp">
                 <a className={styles.projects__link}>
-                  <Image className={styles.projects__link_img} src={livunityImg} alt="Casename" />
+                  <Image className={styles.projects__link_img} src={medappImg} alt="MedAppp" />
                 </a>
               </Link>
               <p className={styles.projects__text}>
@@ -64,7 +65,7 @@ const Projects = () => {
               <h3 className={styles.projects__title}>Nubod</h3>
             </Fade>
             <div className={styles.projects__content}>
-              <Link href="/">
+              <Link href="/cases/nubod">
                 <a className={styles.projects__link}>
                   <Image className={styles.projects__link_img} src={nubodImg} alt="Nubod" />
                 </a>
@@ -85,7 +86,7 @@ const Projects = () => {
             <div className={styles.projects__item}>
               <h3 className={styles.projects__title}>LivUnity</h3>
               <div className={styles.projects__content}>
-                <Link href="/">
+                <Link href="/cases/medapp">
                   <a className={styles.projects__link}>
                     <Image className={styles.projects__link_img} src={livunityImg} alt="LivUnity" />
                   </a>
@@ -98,11 +99,11 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.projects__item}>
-              <h3 className={styles.projects__title}>Casename</h3>
+              <h3 className={styles.projects__title}>Medapp</h3>
               <div className={styles.projects__content}>
                 <Link href="/">
                   <a className={styles.projects__link}>
-                    <Image className={styles.projects__link_img} src={livunityImg} alt="Casename" />
+                    <Image className={styles.projects__link_img} src={medappImg} alt="Medapp" />
                   </a>
                 </Link>
                 <p className={styles.projects__text}>

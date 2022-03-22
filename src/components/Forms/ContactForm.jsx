@@ -15,6 +15,7 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
     message: "",
     getNDA: false,
     file: null,
+    bot_field: ""
   });
   const [emailError, setEmailError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -53,6 +54,7 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
           message: "",
           getNDA: false,
           file: null,
+          bot_field: "",
         });
         setSubmitSuccess(true);
       })
@@ -74,10 +76,16 @@ const ContactForm = ({ extraClass, setIsModalOpen }) => {
         method="POST"
         id="Contact_form"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        data-netlify-honeypot="bot_field"
         onSubmit={handleAjaxSubmit}
       >
         <input type="hidden" name="form-name" value="Contact form" />
+        <p>
+          <label>
+            Don’t fill this out if you’re human:{" "}
+            <input name="bot_field" onChange={handleChangeInput} />
+          </label>
+        </p>
         <Input
           value={formData.name}
           onChange={handleChangeInput}
